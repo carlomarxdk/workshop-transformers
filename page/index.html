@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transformer Architectures for Computational Social Science — ICSC 2026</title>
+<meta name="description" content="A half-day workshop at ICSC 2026, University of Oxford, on applying transformer models to longitudinal sequences of human events.">
+
+<meta property="og:title" content="Transformer Architectures for Computational Social Science">
+<meta property="og:description" content="A half-day workshop at ICSC 2026, University of Oxford, on transformers over sequences of life events.">
+<meta property="og:type" content="website">
+<!-- TODO: absolute URL once the domain is settled -->
+<meta property="og:image" content="assets/hero.webp">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+  <nav class="hero__nav">
+    <span class="hero__mark">ICSC 2026</span>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#prepare">Prepare</a></li>
+      <li><a href="#materials">Materials</a></li>
+      <li><a href="https://github.com/carlomarxdk/workshop-transformers">GitHub</a></li>
+      <li><a href="#organizers">Organizers</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero__body">
+    <p class="eyebrow">Pre-conference workshop</p>
+    <h1>Transformer Architectures<br>for Computational Social Science</h1>
+    <p class="hero__lede">Modelling human lives as sequences of events with transformer models.</p>
+    <dl class="hero__meta">
+      <div><dt>Date and Time</dt><dd>2 September 2026 at 9:00</dd></div>
+      <div><dt>Venue</dt><dd>University of Oxford</dd></div>
+      <div><dt>Conference</dt><dd><a href="https://icsc-conf.github.io/2026/index.html">ICSC 2026</a></dd></div>
+      <div><dt>Format</dt><dd>4 hours, in person</dd></div>
+    </dl>
+  </div>
+</header>
+
+<main>
+
+<section id="overview" class="section">
+  <h2>Overview</h2>
+  <div class="prose">
+    <p>A human life is a sequence of interconnected events: jobs held, hospital admissions, places lived, and incomes earned.
+      These events happen at different times, with different durations, and at different levels of granularity.
+      Studying such sequences typically means <em>aggregating them into simpler features</em>: average income, number of
+       hospital admissions, highest education, and marital status at time of survey.
+       That aggregation is where information is lost.</p>
+
+  <p>This workshop shows how methods from natural language processing, specifically embeddings and transformer architectures,
+  can enrich life-course studies and how one can use these techniques for <em>exploratory data analysis</em>.
+  <strong>We apply transformers not to text but to sequences of life events.</strong></p>
+
+    <p>We start hands-on with language-based transformers, then turn to <em>life-event sequences</em>: how to adapt transformers
+      to life events, how to obtain dense representations (embeddings), how to visualise the resulting embedding space, and
+      how to use these representations for downstream tasks. Finally, we look at methods for interpreting transformer predictions.</p>
+
+    <p class="callout"><strong>The scope.</strong> The workshop covers
+      <em>encoder-only, BERT-style masked modelling</em>, and it does not cover autoregressive LLMs or prompting.</p>
+
+  </div>
+</section>
+
+<section id="learn" class="section section--tint"> 
+  <h2>What you will leave with</h2> 
+  <ul class="outcomes">
+    <li>Introduction to the NLP concepts: tokenization, self-attention, transformers</li>
+    <li>Insight into representation learning and embeddings</li>
+    <li>Hands-on work with transformer models (BERT-style) on English-language text</li>
+    <li>A full pipeline for life-course data processing and analysis: tabular events → sequences → tokens → encoder → representation</li>
+    <li>Overview of methods to visualize and interpret token and sequence representations</li>
+  </ul>
+</section>
+
+<section id="schedule" class="section">
+  <h2>Schedule</h2>
+  <p class="section__note">Two sessions with a break.</p>
+
+  <table class="schedule">
+    <thead>
+      <tr><th scope="col">Block</th><th scope="col">Session</th><th scope="col" class="num">Duration</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">01</th>
+        <td>
+          <span class="schedule__title">Natural Language Processing and Transformers</span>
+          <span class="schedule__desc">Coming soon</span>
+        </td>
+        <td class="num">1 hour 45 min</td>
+      </tr>
+      <tr class="schedule__break"><th scope="row"></th><td>Break</td><td class="num">15 min</td></tr>
+      <tr>
+        <th scope="row">02</th>
+        <td>
+          <span class="schedule__title">A Person-Sequence Model, End to End</span>
+          <span class="schedule__desc">Tokenising synthetic health records, masked prediction
+          over event sequences, person-level embeddings.</span>
+        </td>
+        <td class="num">1 hour 45 min</td>
+      </tr>
+      <tr class="schedule__break"><th scope="row"></th><td>Buffer and discussion</td><td class="num">15 min</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="prepare" class="section section--tint">
+  <h2>Preparing to attend</h2>
+
+  <div class="cols">
+    <div>
+      <h3>Assumed background</h3>
+      <ul>
+        <li>Experience with Python and packages such as <code>pandas</code> or <code>numpy</code> — comfortable reading and modifying data-manipulation code.</li>
+        <li>Familiarity with Jupyter notebooks or Google Colab.</li>
+        <li>Experience with data processing and basic stats.</li>
+      </ul>
+
+      <h3>Explicitly not assumed</h3>
+      <ul>
+        <li>PyTorch <code>torch</code>, or any deep-learning framework.</li>
+        <li>HuggingFace <code>transformers</code>.</li>
+        <li>Any prior exposure to embeddings, representation learning or NLP.</li>
+      </ul>
+      <p class="fineprint">There are no from-scratch coding exercises. Notebook work is
+      run-only or narrow fill-in-the-blank, and every blank is about a modelling decision
+      rather than framework boilerplate.</p>
+    </div>
+
+    <div>
+      <h3>What to bring</h3>
+      <ul>
+        <li>A laptop with a browser and a code editor (you can also run notebooks in <a href="https://colab.research.google.com/">Google Colab</a>).</li>
+        <li>A pen and paper: one full segment happens away from the keyboard.</li>
+      </ul>
+      <p class="fineprint">A local environment will be published later: you can use <code>uv</code> (preferred) or <code>conda</code> to install it.
+         Everything needed on the day will be linked from this page.</p>
+    </div>
+  </div>
+</section>
+
+<section id="materials" class="section">
+  <h2>Materials</h2>
+  <p class="section__note">Published here ahead of the session.</p>
+
+  <ul class="materials">
+    <li class="pending"><span class="materials__name">Slides</span><span class="materials__status">Coming soon</span></li>
+    <li class="pending"><span class="materials__name">Notebooks</span><span class="materials__status">Coming soon</span></li>
+    <li class="pending"><span class="materials__name">Pen-and-paper handout and worked solution</span><span class="materials__status">Coming soon</span></li>
+    <li class="pending"><span class="materials__name">Local environment setup</span><span class="materials__status">Coming soon</span></li>
+  </ul>
+
+  <h3>Data</h3>
+  <div class="prose">
+    <p>During the second hands-on session, we will use a <a href="https://github.com/synthetichealth/synthea">Synthea</a>
+    synthetic patient population, distributed via
+    <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/BWDKXS">Harvard
+    Dataverse</a>. Synthea is a <em>rule-based simulator</em> for electronic health records (EHR).
+     No real patient data is used and none is required to participate.</p>
+  </div>
+</section>
+
+<section id="reading" class="section section--tint">
+  <h2>Background reading</h2>
+  <p class="section__note">Not required. The workshop is self-contained.</p>
+
+  <ul class="reading">
+    <li>
+      <a href="https://doi.org/10.1038/s43588-023-00573-5">Using sequences of life-events to predict human lives</a>
+      <span class="reading__meta">Savcisens et al. · life2vec · <em>Nature Computational Science</em> 4, 43–56 (2024) · life sequences from national registers</span>
+    </li>
+    <li>
+      <a href="https://openreview.net/forum?id=4i1MXH8Sle">CAREER: A Foundation Model for Labor Sequence Data</a>
+      <span class="reading__meta">Vafa et al. · TMLR (2024) · occupational trajectories</span>
+    </li>
+    <li>
+      <a href="https://doi.org/10.1038/s41598-020-62922-y">BEHRT: Transformer for Electronic Health Records</a>
+      <span class="reading__meta">Li et al. · <em>Scientific Reports</em> 10, 7155 (2020) · the tokenisation scheme the second session adapts</span>
+    </li>
+    <li>
+      <a href="https://doi.org/10.1145/3477495.3531983">GETNext: Trajectory Flow Map Enhanced Transformer for Next POI Recommendation</a>
+      <span class="reading__meta">Yang, Liu &amp; Zhao · SIGIR (2022) · mobility traces</span>
+    </li>
+    <li>
+      <a href="https://doi.org/10.1145/3643514">MAPLE: Mobile App Prediction Leveraging Large Language Model Embeddings</a>
+      <span class="reading__meta">Khaokaew, Xue &amp; Salim · IMWUT (2024) · app-usage sequences</span>
+    </li>
+    <li>
+      <a href="https://doi.org/10.1016/S2589-7500(24)00025-6">Foresight — a generative pretrained transformer for modelling patient timelines</a>
+      <span class="reading__meta">Kraljevic et al. · <em>Lancet Digital Health</em> (2024) · cited as landscape; generative models are outside this workshop's scope</span>
+    </li>
+    <li>
+      <a href="https://doi.org/10.1038/s41586-025-09529-3">Learning the natural history of human disease with generative transformers</a>
+      <span class="reading__meta">Shmatko et al. · Delphi-2M · <em>Nature</em> (2025) · likewise, landscape only</span>
+    </li>
+  </ul>
+</section>
+
+<section id="organizers" class="section">
+  <h2>Organizers</h2>
+  <ul class="people">
+    <li>
+      <span class="people__name"><a href="https://savcisens.com/">Germans Savcisens</a></span>
+      <span class="people__affil">Northeastern University</span>
+      <span class="people__role">Workshop Lead</span>
+    </li>
+    <li>
+      <span class="people__name"><a href="https://crahal.com/">Charlie Rahal</a></span>
+      <span class="people__affil">University of Oxford</span>
+      <span class="people__role">Conference Organizer (Senior TPC Member)</span>
+    </li>
+    <li>
+      <span class="people__name">Zerui Tian</span>
+      <span class="people__affil">University of Oxford</span>
+      <span class="people__role">Workshops Chair</span>
+    </li>
+  </ul>
+  <p class="prose">Questions about the workshop:
+    <a href="mailto:germans@savcisens.com">germans@savcisens.com</a>.</p>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>Workshop at the <a href="https://icsc-conf.github.io/2026/index.html">ICSC 2026 (International
+    Conference on Social Computing 2026)</a>, Nuffield College, University of Oxford.</p>
+  <p class="footer__fine">Materials released under the <a href="https://github.com/carlomarxdk/workshop-transformers/blob/main/LICENSE">MIT License</a>.
+    Last updated <time datetime="2026-08-18">18 August 2026</time>.</p>
+</footer>
+
+</body>
+</html>

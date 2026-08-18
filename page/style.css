@@ -1,0 +1,420 @@
+/* Workshop site — palette and type carried over from the slide deck.
+   Palette constants mirror slides/background.py; headings/body mirror slides/fonts.xml.
+   Tints are pre-mixed against white here rather than computed, so they match what
+   `mix(COLOUR, WHITE, t)` produces in the renderer. */
+
+:root {
+  --amber:    #FBBE0A;
+  --midnight: #1E152A;
+  --granite:  #4E6766;
+  --pacific:  #5AB1BB;
+  --blush:    #D36582;
+  --moss:     #6F8F3F;
+
+  /* pacific mixed toward white, matching the `quiet` / `cover` washes */
+  --wash:     #F2F8F9;
+  --wash-2:   #E4EFF1;
+  --rule:     #D8E3E4;
+
+  --ink:      var(--midnight);
+  --ink-soft: #55506080;
+
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --sans:  "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+
+  --measure: 38rem;   /* prose column — ~72 characters at the body size */
+  --page:    60rem;   /* outer content width. Kept close to --measure so the block reads as
+                         centred on a wide display; at 72rem the prose hugged the left of a
+                         mostly-empty column. */
+  --gutter:  clamp(1.5rem, 5vw, 5rem);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-weight: 400;
+  font-size: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
+  line-height: 1.65;
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  line-height: 1.12;
+  text-wrap: balance;
+  margin: 0;
+}
+
+a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--amber);
+  text-decoration-thickness: 0.09em;
+  text-underline-offset: 0.22em;
+  transition: background-color 120ms ease;
+}
+a:hover { background: #FBBE0A33; }
+
+code {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.88em;
+  background: var(--wash-2);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+}
+
+/* ---------------------------------------------------------------- hero */
+
+.hero {
+  position: relative;
+  min-height: min(46rem, 92vh);
+  display: flex;
+  flex-direction: column;
+  padding-block: 0 clamp(3rem, 8vh, 6rem);
+  padding-inline: max(var(--gutter), (100% - var(--page)) / 2);
+  background-image: url("assets/hero.webp");
+  background-size: cover;
+  background-position: 50% 50%;
+  isolation: isolate;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .hero { background-image: url("assets/hero-mobile.webp"); }
+}
+
+.hero__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: clamp(1.25rem, 3vh, 2rem) 0;
+  width: 100%;
+}
+
+.hero__mark {
+  font-family: var(--serif);
+  font-size: 0.9rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--granite);
+}
+
+.hero__nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.75rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.hero__nav a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 0.15rem;
+  color: var(--ink);
+}
+.hero__nav a:hover {
+  background: none;
+  border-bottom-color: var(--amber);
+}
+
+.hero__body {
+  margin-block: auto 0;
+  width: 100%;
+  padding-top: 4rem;
+}
+
+.eyebrow {
+  margin: 0 0 1.25rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--blush);
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 1.1rem + 5.4vw, 5.25rem);
+  font-weight: 300;
+  letter-spacing: -0.028em;
+  line-height: 1.03;
+  max-width: 18ch;
+}
+
+.hero__lede {
+  margin: 1.5rem 0 0;
+  max-width: 36ch;
+  font-size: clamp(1.05rem, 0.95rem + 0.5vw, 1.3rem);
+  line-height: 1.45;
+  color: #2E2740;
+}
+
+.hero__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.75rem 3.5rem;
+  margin: clamp(2.5rem, 6vh, 4rem) 0 0;
+}
+.hero__meta div { display: flex; flex-direction: column; gap: 0.25rem; }
+.hero__meta dt {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--granite);
+}
+.hero__meta dd { margin: 0; font-size: 1.02rem; }
+
+/* ------------------------------------------------------------ sections */
+
+/* The content column is established by the container's own padding, not by
+   `margin-inline: auto` on each child. Centring children individually breaks the moment a
+   child sets `margin` with a shorthand (`margin: 0 0 2rem`), which silently clears the auto
+   and snaps it to the gutter — and it indents any child with a narrower max-width, like
+   `.prose`. Padding keeps the background full-bleed while giving every child one left edge. */
+.section {
+  padding-block: clamp(4rem, 10vh, 7.5rem);
+  padding-inline: max(var(--gutter), (100% - var(--page)) / 2);
+}
+
+.section--tint {
+  background: var(--wash);
+  border-block: 1px solid var(--rule);
+}
+
+.section h2 {
+  font-size: clamp(1.75rem, 1.2rem + 1.9vw, 2.75rem);
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.section h3 {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin: 2.25rem 0 0.75rem;
+}
+.section h3:first-child { margin-top: 0; }
+
+.section__note {
+  margin: -1.25rem 0 2.5rem;
+  color: var(--granite);
+  max-width: var(--measure);
+}
+
+.prose { max-width: var(--measure); }
+.prose p { margin: 0 0 1.35em; }
+.prose p:last-child { margin-bottom: 0; }
+
+.callout {
+  border-left: 2px solid var(--amber);
+  padding: 0.15rem 0 0.15rem 1.35rem;
+  color: #302941;
+}
+
+.fineprint {
+  font-size: 0.92rem;
+  color: var(--granite);
+  max-width: var(--measure);
+}
+
+/* ------------------------------------------------------------ outcomes */
+
+.outcomes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1.5rem 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+.outcomes li {
+  position: relative;
+  padding-left: 1.6rem;
+  max-width: 42ch;
+}
+.outcomes li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--amber);
+}
+
+/* ------------------------------------------------------------ schedule */
+
+.schedule {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.schedule th, .schedule td {
+  padding: 1.4rem 1.5rem 1.4rem 0;
+  vertical-align: baseline;
+  border-bottom: 1px solid var(--rule);
+}
+
+.schedule thead th {
+  padding-top: 0;
+  padding-bottom: 0.6rem;
+  font-weight: 500;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--granite);
+  border-bottom-color: var(--ink);
+}
+
+.schedule tbody th {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 1.05rem;
+  color: var(--blush);
+  width: 5rem;
+}
+
+.schedule .num { text-align: right; padding-right: 0; white-space: nowrap; color: var(--granite); }
+.schedule thead .num { text-align: right; }
+
+.schedule__title {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+.schedule__desc {
+  display: block;
+  max-width: 54ch;
+  color: #4A4458;
+  font-size: 0.96rem;
+  line-height: 1.55;
+}
+
+.schedule__break td, .schedule__break .num { color: var(--granite); font-size: 0.95rem; }
+.schedule__break td, .schedule__break th { padding-block: 0.9rem; }
+
+.schedule__total td, .schedule__total .num {
+  font-weight: 500;
+  border-bottom: none;
+}
+
+/* ---------------------------------------------------------------- cols */
+
+.cols {
+  display: grid;
+  gap: clamp(2rem, 5vw, 4.5rem);
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+.cols ul { margin: 0 0 1.5rem; padding-left: 1.15rem; }
+.cols li { margin-bottom: 0.5rem; max-width: 46ch; }
+
+/* ----------------------------------------------------------- materials */
+
+.materials {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+  max-width: 44rem;
+}
+.materials li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1.05rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+.materials__name { font-family: var(--serif); font-size: 1.15rem; }
+.materials__status {
+  font-size: 0.75rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--granite);
+}
+.materials .pending .materials__name { color: var(--granite); }
+
+/* ------------------------------------------------------------- reading */
+
+.reading {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1.6rem;
+  max-width: 52rem;
+}
+.reading li { padding-left: 1.1rem; border-left: 1px solid var(--rule); }
+.reading a { font-family: var(--serif); font-size: 1.12rem; }
+.reading__meta {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  color: var(--granite);
+}
+
+/* -------------------------------------------------------------- people */
+
+/* Auto-fit rather than a fixed column count, so organisers sit in a row on a wide screen
+   and stack on a phone without a media query. */
+.people {
+  list-style: none;
+  margin: 0 0 2.5rem;
+  padding: 0;
+  display: grid;
+  gap: 2rem 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
+.people li { display: flex; flex-direction: column; gap: 0.15rem; }
+.people__name { font-family: var(--serif); font-size: 1.3rem; line-height: 1.2; }
+.people__affil { color: var(--granite); }
+.people__role {
+  margin-top: 0.55rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  color: var(--blush);
+}
+
+/* -------------------------------------------------------------- footer */
+
+.footer {
+  padding-block: 3rem 4rem;
+  padding-inline: max(var(--gutter), (100% - var(--page)) / 2);
+  border-top: 1px solid var(--rule);
+  background: var(--wash);
+  color: var(--granite);
+  font-size: 0.92rem;
+}
+.footer p { margin: 0 0 0.5rem; }
+.footer__fine { font-size: 0.85rem; }
+
+/* ------------------------------------------------------------- motion */
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+}
+
+:focus-visible {
+  outline: 2px solid var(--midnight);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
