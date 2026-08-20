@@ -2,7 +2,7 @@
 
 _A half-day workshop at ICSC 2026 on applying transformer models to longitudinal sequences of socioeconomic and health events._
 
-* **Full details, schedule and background reading: [workshop site](https://carlomarxdk.github.io/workshop/).**
+* **Full details, schedule and background reading: [workshop site](https://carlomarxdk.github.io/workshop-transformers/).**
 * **When:** 2 September 2026, 9:00 (4 hours), in person 
 * **Where:** Nuffield College, University of Oxford 
 * **Conference:** [ICSC 2026](https://icsc-conf.github.io/2026/index.html) 
