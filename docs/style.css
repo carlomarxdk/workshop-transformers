@@ -1,8 +1,3 @@
-/* Workshop site — palette and type carried over from the slide deck.
-   Palette constants mirror slides/background.py; headings/body mirror slides/fonts.xml.
-   Tints are pre-mixed against white here rather than computed, so they match what
-   `mix(COLOUR, WHITE, t)` produces in the renderer. */
-
 :root {
   --amber:    #FBBE0A;
   --midnight: #1E152A;
