@@ -9,9 +9,6 @@ _A half-day workshop at ICSC 2026 on applying transformer models to longitudinal
 
 We apply transformers not to text but to **sequences of life events**. The session starts hands-on with language-based transformers, then turns to life-event sequences: how to adapt transformers to them, how to obtain dense representations, how to visualise the resulting embedding space, and how to use those representations for downstream tasks.
 
-## Schedule
-
-TBA
 
 ## Preparation
 
@@ -23,7 +20,7 @@ TBA
 
 ### Environment Setup
 
-Notebooks run in Colab with no setup at all. To run them locally, use [uv](https://docs.astral.sh/uv/) (preferred) or [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html).
+If you want to run the notebooks locally, install the environment with [uv](https://docs.astral.sh/uv/) (preferred) or [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html). Colab links will be published on the workshop page before the session.
 
 **1. Install uv** (once, if you do not already have it):
 
@@ -49,6 +46,8 @@ That one command reads `pyproject.toml` and `uv.lock`, creates `.venv/` inside t
 uv run jupyter lab # if you work from VS Code, you do not need to do that
 ```
 
+**4. Check it worked.** Open [`notebooks/0-preparation.ipynb`](notebooks/0-preparation.ipynb) and run every cell. It imports each package, prints its version, and downloads the models and data ahead of time so nothing depends on the conference wifi on the day. If every cell runs without error you are ready.
+
 `uv run` executes a command inside the project environment. That is the whole workflow: prefix anything you want to run with `uv run` and it uses the right interpreter and packages, with no activation step:
 
 ```bash
@@ -71,4 +70,4 @@ uv add polars        # a runtime dependency
 ## Data
 
 1. In the first hands-on session, we will use a small dataset of true and false statements: [Trilemma of Truth dataset](https://huggingface.co/datasets/carlomarxx/trilemma-of-truth).
-2. The second session uses a pre-generated [Synthea](https://github.com/synthetichealth/synthea) synthetic patient population, distributed via [Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/BWDKXS). No real patient data is used and none is required to participate.
+2. The second session uses a pre-generated [Synthea](https://github.com/synthetichealth/synthea) synthetic patient population.
