@@ -219,6 +219,11 @@ Output(overfit) = ____________
 Output(again)   = ____________
 ```
 
+
+## Questions:
+
+1. What would happen if we did not have any positional embeddings? 
+
 ## Reference
 
 > Devlin, Jacob, et al. "BERT: Pre-training of deep bidirectional transformers for language understanding." Proceedings of the 2019 conference of the North American chapter of the association for computational linguistics: human language technologies, volume 1 (long and short papers). 2019.
