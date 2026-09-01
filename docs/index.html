@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Transformer Architectures for Computational Social Science — ICSC 2026</title>
+<title>Transformer Architectures for Computational Social Science: ICSC 2026</title>
 <meta name="description" content="A half-day workshop at ICSC 2026, University of Oxford, on applying transformer models to longitudinal sequences of human events.">
 
 <meta property="og:title" content="Transformer Architectures for Computational Social Science">
@@ -78,6 +78,7 @@
     <li>Hands-on work with transformer models (BERT-style) on English-language text</li>
     <li>A full pipeline for life-course data processing and analysis: tabular events → sequences → tokens → encoder → representation</li>
     <li>Overview of methods to visualize and interpret token and sequence representations</li>
+    <li>How to audit a prediction: trivial baselines, ablations, leakage probes and attribution</li>
   </ul>
 </section>
 
@@ -94,7 +95,9 @@
         <th scope="row">01</th>
         <td>
           <span class="schedule__title">Natural Language Processing and Transformers</span>
-          <span class="schedule__desc">Coming soon</span>
+          <span class="schedule__desc">Tokenisation, embeddings, self-attention and masked
+          language modelling, worked on a pretrained English BERT. Includes one attention head
+          computed by hand, away from the keyboard.</span>
         </td>
         <td class="num">1 hour 45 min</td>
       </tr>
@@ -104,7 +107,8 @@
         <td>
           <span class="schedule__title">A Person-Sequence Model, End to End</span>
           <span class="schedule__desc">Tokenising synthetic health records, masked prediction
-          over event sequences, person-level embeddings.</span>
+          over event sequences, person-level embeddings, and honest baselines, including
+          where a sequence model beats them and where it does not.</span>
         </td>
         <td class="num">1 hour 45 min</td>
       </tr>
@@ -120,7 +124,7 @@
     <div>
       <h3>Assumed background</h3>
       <ul>
-        <li>Experience with Python and packages such as <code>pandas</code> or <code>numpy</code> — comfortable reading and modifying data-manipulation code.</li>
+        <li>Experience with Python and packages such as <code>pandas</code> or <code>numpy</code> (comfortable reading and modifying data-manipulation code).</li>
         <li>Familiarity with Jupyter notebooks or Google Colab.</li>
         <li>Experience with data processing and basic stats.</li>
       </ul>
@@ -148,8 +152,11 @@
         <li>You can find the environment specification in <a href="https://github.com/carlomarxdk/workshop-transformers/blob/main/pyproject.toml">the GitHub repository</a>. You can use <code>uv</code> (preferred) or <code>conda</code> to install it.</li>
         <li>You can find the preparation notebook (that downloads the necessary data and checks the environment): <a href="https://github.com/carlomarxdk/workshop-transformers/blob/main/notebooks/0-preparation.ipynb">0-Preparation</a>. </li>
      </ul>  
-      <p class="fineprint">You do not have to set up the environment or run the preparation
-      notebook ahead of time. Everything needed on the day will be linked from this page.</p>
+      <p class="fineprint"><strong>Please run the preparation notebook before you arrive.</strong>
+      It downloads roughly 700&nbsp;MB of models and data, and conference wifi will not enjoy a
+      hundred people doing that at once, and the first exercise starts twenty-five minutes in.
+      You do not need a local environment: Colab is enough, and everything needed on the day is
+      linked from this page.</p>
     </div>
   </div>
 </section>
@@ -159,11 +166,57 @@
   <p class="section__note">Published here ahead of the session.</p>
 
   <ul class="materials">
-    <li class="pending"><span class="materials__name">Slides</span><span class="materials__status">Coming soon</span></li>
-    <li class="pending"><span class="materials__name">Notebooks</span><span class="materials__status">Coming soon</span></li>
-    <li class="pending"><span class="materials__name">Pen-and-paper exercise</span><span class="materials__status"><a href="https://github.com/carlomarxdk/workshop-transformers/blob/main/exercise/pen-paper.md">Github: Pen & Paper</a></span></li>
-    <li class="pending"><span class="materials__name">Environment setup</span><span class="materials__status"><a href="https://github.com/carlomarxdk/workshop-transformers#preparation">Github: Preparations</a></span></li>
+    <!-- When the deck goes up, swap this <li> for:
+         <li><span class="materials__name">Slides</span><span class="materials__status"><a href="https://github.com/carlomarxdk/workshop-transformers/blob/main/slides-draft.pdf">PDF</a></span></li> -->
+    <li class="pending"><span class="materials__name">Slides</span><span class="materials__status">Posted right before the session</span></li>
+    <li><span class="materials__name">Notebooks</span><span class="materials__status"><a href="#notebooks">See below</a></span></li>
+    <li><span class="materials__name">Pen-and-paper exercise</span><span class="materials__status"><a href="https://github.com/carlomarxdk/workshop-transformers/blob/main/exercise/pen-paper.md">GitHub</a></span></li>
+    <!-- Held back so the exercise is not spoiled. After the session, swap the <li> below for:
+         <li><span class="materials__name">Pen-and-paper solutions</span><span class="materials__status"><a href="https://github.com/carlomarxdk/workshop-transformers/blob/main/exercise/pen-paper-solutions.md">GitHub</a></span></li> -->
+    <li class="pending"><span class="materials__name">Pen-and-paper solutions</span><span class="materials__status">Released after the session</span></li>
+    <li><span class="materials__name">Environment setup</span><span class="materials__status"><a href="https://github.com/carlomarxdk/workshop-transformers#preparation">GitHub</a></span></li>
   </ul>
+
+  <h3 id="notebooks">Notebooks</h3>
+  <p class="section__note">Open in Colab: nothing to install. The GitHub link shows the
+  source and the saved outputs without running anything.</p>
+
+  <ul class="materials">
+    <li>
+      <span class="materials__name">0 &middot; Preparation</span>
+      <span class="materials__status"><a href="https://colab.research.google.com/github/carlomarxdk/workshop-transformers/blob/main/notebooks/0-preparation.ipynb">Colab</a> &middot; <a href="https://github.com/carlomarxdk/workshop-transformers/blob/main/notebooks/0-preparation.ipynb">GitHub</a></span>
+    </li>
+    <li>
+      <span class="materials__name">A1 &middot; Introduction to BERT</span>
+      <span class="materials__status"><a href="https://colab.research.google.com/github/carlomarxdk/workshop-transformers/blob/main/notebooks/a1-bert-simple.ipynb">Colab</a> &middot; <a href="https://github.com/carlomarxdk/workshop-transformers/blob/main/notebooks/a1-bert-simple.ipynb">GitHub</a></span>
+    </li>
+    <li>
+      <span class="materials__name">A2 &middot; What embeddings capture</span>
+      <span class="materials__status"><a href="https://colab.research.google.com/github/carlomarxdk/workshop-transformers/blob/main/notebooks/a2-bert-token-embeddings.ipynb">Colab</a> &middot; <a href="https://github.com/carlomarxdk/workshop-transformers/blob/main/notebooks/a2-bert-token-embeddings.ipynb">GitHub</a></span>
+    </li>
+    <li>
+      <span class="materials__name">A3 &middot; Probing for truthfulness</span>
+      <span class="materials__status"><a href="https://colab.research.google.com/github/carlomarxdk/workshop-transformers/blob/main/notebooks/a3-bert-predictions.ipynb">Colab</a> &middot; <a href="https://github.com/carlomarxdk/workshop-transformers/blob/main/notebooks/a3-bert-predictions.ipynb">GitHub</a></span>
+    </li>
+    <li>
+      <span class="materials__name">B1 &middot; From tables to sequences</span>
+      <span class="materials__status">Uploaded during the break</span>
+    </li>
+    <li>
+      <span class="materials__name">B2 &middot; Pretraining and masked events</span>
+      <span class="materials__status">Uploaded during the break</span>
+    </li>
+    <li>
+      <span class="materials__name">B3 &middot; The event embedding space</span>
+      <span class="materials__status">Uploaded during the break</span>
+    </li>
+    <li class="pending">
+      <span class="materials__name">B4 &middot; Predicting severe disease</span>
+      <span class="materials__status">Uploaded during the break</span>
+    </li>
+  </ul>
+  <p class="fineprint">Run <strong>0 &middot; Preparation</strong> first. The rest assume the
+  model and the data are already downloaded.</p>
 
   <h3>Data</h3>
   <div class="prose">
@@ -172,6 +225,14 @@
     <p>During the second hands-on session, we will use a <a href="https://github.com/synthetichealth/synthea">Synthea</a>
     synthetic patient population. Synthea is a <em>rule-based simulator</em> for electronic health records (EHR).
      No real patient data is used and none is required to participate.</p>
+    <p>Both the pretrained event model and the patient data are published on the Hugging Face Hub, so
+      the notebooks download them and nothing needs to be built on the day:</p>
+    <ul>
+      <li><a href="https://huggingface.co/carlomarxx/synthea-bert">carlomarxx/synthea-bert</a>:
+        the pretrained BERT-style model over event sequences (~4&nbsp;MB).</li>
+      <li><a href="https://huggingface.co/datasets/carlomarxx/synthea-workshop-data">carlomarxx/synthea-workshop-data</a>
+        : 50,000 synthetic patients, with the vocabulary and labels (~19&nbsp;MB).</li>
+    </ul>
   </div>
 </section>
 
@@ -240,7 +301,7 @@
   <p>Workshop at the <a href="https://icsc-conf.github.io/2026/index.html">ICSC 2026 (International
     Conference on Social Computing 2026)</a>, Nuffield College, University of Oxford.</p>
   <p class="footer__fine">Materials released under the <a href="https://github.com/carlomarxdk/workshop-transformers/blob/main/LICENSE">MIT License</a>.
-    Last updated <time datetime="2026-08-18">18 August 2026</time>.</p>
+    Last updated <time datetime="2026-09-01">1 September 2026</time>.</p>
 </footer>
 
 </body>

@@ -1,6 +1,6 @@
 """The model: a small BERT adapted for life-event sequences, following life2vec.
 
-Shared by scripts/pretrain.py and notebooks 5-7, so that training and inference build the
+Shared by scripts/pretrain.py and notebooks b2-b4, so that training and inference build the
 input embeddings the *same* way. They must: the model is trained on
 
     token embedding + absolute position + Time2Vec(age) + Time2Vec(days before index)
