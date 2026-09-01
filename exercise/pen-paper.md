@@ -1,13 +1,13 @@
 # Pen-and-Paper Exercise: One-layer Transformer (Encoder-only)
 
-> [!INFO] Overview
+> [!NOTE] Overview
 > **Task:** Compute the output of the one-layer transformer
 >
 > **Input Sentence**: "My model overfit again"
 >
 > **Output**: Contextualized embeddings for each token.
 
-**Note:** Feel free to use the online calculators for vector-matrix multiplications: [Online Calculator](https://matrix.reshish.com/matrix-multiplication/).
+**Note:** You can use an online calculator for the vector-matrix multiplications: [Online Calculator](https://matrix.reshish.com/matrix-multiplication/).
 
 ## Architecture
 
@@ -19,7 +19,7 @@ Our model has already been pretrained. We will use a **slightly simplified** BER
 
 1. We use word embeddings instead of wordpieces (e.g., our tokenizer does not split "overfit" into ``['over'] ['##fit']``)
 2. We do not use normalization layers (which rescale tensors inside of the encoder)
-3. We drop the output projection $W_O$ that a tansformation  applies after the weighted sum (in Step 4).
+3. We drop the output projection $W_O$ that BERT applies after the weighted sum (in Step 4).
 4. Our vocabulary has only 11 tokens.
 
 ## Steps
@@ -78,7 +78,7 @@ K(t) = X(t)\, W_K \\
 V(t) = X(t)\, W_V
 $$
 
-**Subtask:**  Compute Q, K, V projections for all four tokens.
+**Subtask:** Compute Q, K, V projections for all four tokens.
 
 ```
 Q(my)      = ____________
@@ -105,9 +105,10 @@ $$
 S(i, j) = \frac{Q(i) \cdot K(j)}{\sqrt{d_k}}, \qquad d_k = 3, \quad \sqrt{3} \approx 1.732
 $$
 
-**Why divide?** Dot products grow with the dimension of the vectors, and softmax of large numbers saturate.  The $\sqrt{d_k}$ term keeps the scores in a range where attention stays a soft distribution.
+**Why divide?** Dot products grow with the dimension of the vectors, and a softmax of large numbers saturates. The $\sqrt{d_k}$ term keeps the scores in a range where attention stays a soft distribution.
 
-**Subtask:** Fill in the 4×4 score matrix (rows = query token, columns = key token).
+**Subtask:** Fill in the 4×4 score matrix of **scaled** scores $S(i,j)$ (rows = query token,
+columns = key token). The raw dot products are all integers, so check those before you divide.
 
 | | my | model | overfit | again |
 | --- | --- | --- | --- | --- |
@@ -124,7 +125,7 @@ $$
 A(i,j) = \frac{e^{S(i,j)}}{\sum_{k=1}^{4} e^{S(i,k)}}
 $$
 
-The sum in the denominator runs over the whole row $i$, that is what makes the row sum to 1.
+The sum in the denominator runs over the whole row $i$; that is what makes the row sum to 1.
 
 **Subtask:** Use the [softmax calculator](https://www.redcrab-software.com/en/Calculator/Softmax) to fill in the scores below.
 
@@ -145,7 +146,7 @@ $$
 \mathrm{C}(i) = \sum_j A(i,j) \cdot V(j)
 $$
 
-**Subtask:**  Compute the contextual representations.
+**Subtask:** Compute the contextual representations.
 
 ```
 C(my)      = ____________
@@ -175,7 +176,7 @@ Z(again)   = ____________
 
 Attention mixed information *across tokens*. The position-wise layer does the complementary job: it projects each token up into a wider space and back down, letting that token's own dimensions interact. Real BERT expands 768 → 3072 → 768; we go 3 → 4 → 3.
 
-The **same** weights are applied independently to every token's $Z$ vector (this is what "position-wise" means — there is no $i$ index on $W$):
+The **same** weights are applied independently to every token's $Z$ vector (this is what "position-wise" means: there is no $i$ index on $W$):
 
 $$
 W_{f_1} = \begin{bmatrix} 1 & 0 & -1 & 1 \\ 0 & 1 & 1 & 0 \\ 1 & -1 & 0 & 0 \end{bmatrix}\ (3 \times 4), \quad
@@ -220,9 +221,9 @@ Output(again)   = ____________
 ```
 
 
-## Questions:
+## Question
 
-1. What would happen if we did not have any positional embeddings? 
+What would happen if we did not have any positional embeddings?
 
 ## Reference
 
