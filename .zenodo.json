@@ -1,0 +1,94 @@
+{
+  "title": "Transformer Architectures for Computational Social Science: Workshop Materials (ICSC 2026)",
+  "description": "Materials for the half-day workshop Transformer Architectures for Computational Social Science, held at the International Conference on Social Computing (ICSC 2026), Nuffield College, University of Oxford, 2 September 2026. The workshop applies transformers not to text but to sequences of life events. It starts hands-on with language-based transformers (BERT token embeddings, masked-language prediction, attribution), then turns to longitudinal socioeconomic and health event sequences: how to adapt transformers to them, how to obtain dense representations, how to visualise the resulting embedding space, and how to use those representations for downstream prediction tasks. The repository contains eight Jupyter notebooks, an event-BERT implementation with tokenizer-building and pretraining scripts, pen-and-paper exercises with solutions, derived data built from a synthetic patient population, workshop slides, and the workshop website.",
+  "upload_type": "lesson",
+  "access_right": "open",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Savcisens, Germans",
+      "affiliation": "Northeastern University",
+      "orcid": "0000-0002-5811-3230"
+    }
+  ],
+  "license": "MIT",
+  "related_identifiers": [
+    {
+      "identifier": "https://carlomarxdk.github.io/workshop-transformers/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://icsc-conf.github.io/2026/index.html",
+      "relation": "isPartOf",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://huggingface.co/datasets/carlomarxx/trilemma-of-truth",
+      "relation": "isDerivedFrom",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.48550/arXiv.2506.23921",
+      "relation": "references",
+      "scheme": "doi"
+    },
+
+    {
+      "identifier": "10.1038/s41586-025-09529-3",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1038/s43588-023-00573-5",
+      "relation": "references",
+      "scheme": "doi"
+    },
+
+    {
+      "identifier": "10.1016/S2589-7500(24)00025-6",
+      "relation": "references",
+      "scheme": "doi"
+    },
+
+    {
+      "identifier": "https://openreview.net/forum?id=4i1MXH8Sle",
+      "relation": "references",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.1145/3643514",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1145/3477495.3531983",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://github.com/synthetichealth/synthea",
+      "relation": "isDerivedFrom",
+      "scheme": "url"
+    }
+  ],
+  "keywords": [
+    "Computational social science",
+    "Transformers",
+    "BERT",
+    "Life-event sequences",
+    "Sequence modelling",
+    "Representation learning",
+    "Embeddings",
+    "Masked language modelling",
+    "Large Language Models",
+    "LLM",
+    "Health records",
+    "Synthetic data",
+    "Dimensionality reduction",
+    "Workshop materials",
+    "Teaching materials",
+    "Jupyter notebooks",
+    "Python"
+  ]
+}
