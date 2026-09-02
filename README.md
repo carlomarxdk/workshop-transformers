@@ -1,5 +1,8 @@
 # Transformer Architectures for Computational Social Science
 
+[![DOI](https://zenodo.org/badge/1338769956.svg)](https://doi.org/10.5281/zenodo.22258187)
+
+
 _A half-day workshop at ICSC 2026 on applying transformer models to longitudinal sequences of socioeconomic and health events._
 
 * **Full details, schedule and background reading: [workshop site](https://carlomarxdk.github.io/workshop-transformers/).**
