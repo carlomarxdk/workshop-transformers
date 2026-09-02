@@ -1,0 +1,1037 @@
+token_id,token,kind,source,frequency,is_severe_outcome
+0,[PAD],special,,0,False
+1,[UNK],special,,0,False
+2,[CLS],special,,0,False
+3,[SEP],special,,0,False
+4,[MASK],special,,0,False
+5,AGE_30_34,background,,0,False
+6,AGE_35_39,background,,0,False
+7,AGE_40_44,background,,0,False
+8,AGE_45_49,background,,0,False
+9,AGE_50_54,background,,0,False
+10,AGE_55_59,background,,0,False
+11,ETH_hispanic,background,,0,False
+12,ETH_nonhispanic,background,,0,False
+13,INCOME_B01,background,,0,False
+14,INCOME_B02,background,,0,False
+15,INCOME_B03,background,,0,False
+16,INCOME_B04,background,,0,False
+17,INCOME_B05,background,,0,False
+18,INCOME_B06,background,,0,False
+19,INCOME_B07,background,,0,False
+20,INCOME_B08,background,,0,False
+21,INCOME_B09,background,,0,False
+22,INCOME_B10,background,,0,False
+23,INCOME_B11,background,,0,False
+24,INCOME_B12,background,,0,False
+25,INCOME_B13,background,,0,False
+26,INCOME_B14,background,,0,False
+27,INCOME_B15,background,,0,False
+28,INCOME_B16,background,,0,False
+29,INCOME_B17,background,,0,False
+30,INCOME_B18,background,,0,False
+31,INCOME_B19,background,,0,False
+32,INCOME_B20,background,,0,False
+33,INCOME_B21,background,,0,False
+34,INCOME_B22,background,,0,False
+35,INCOME_B23,background,,0,False
+36,INCOME_B24,background,,0,False
+37,INCOME_B25,background,,0,False
+38,MARITAL_D,background,,0,False
+39,MARITAL_M,background,,0,False
+40,MARITAL_NA,background,,0,False
+41,MARITAL_S,background,,0,False
+42,MARITAL_W,background,,0,False
+43,RACE_asian,background,,0,False
+44,RACE_black,background,,0,False
+45,RACE_hawaiian,background,,0,False
+46,RACE_native,background,,0,False
+47,RACE_other,background,,0,False
+48,RACE_white,background,,0,False
+49,SEX_F,background,,0,False
+50,SEX_M,background,,0,False
+51,Assessment of health and social care needs (procedure),event,procedures,1182590,False
+52,Depression screening (procedure),event,procedures,985621,False
+53,Influenza  split virus  trivalent  PF,event,immunizations,916201,False
+54,Assessment of substance use (procedure),event,procedures,730271,False
+55,Medication review due (situation),event,conditions,661551,False
+56,Medication reconciliation (procedure),event,procedures,625747,False
+57,Dental consultation and report (procedure),event,procedures,602017,False
+58,Patient referral for dental care (procedure),event,procedures,599168,False
+59,Assessment of anxiety (procedure),event,procedures,590480,False
+60,Oral health education (procedure),event,procedures,583308,False
+61,Examination of gingivae (procedure),event,procedures,579538,False
+62,Dental care (regime/therapy),event,procedures,579538,False
+63,Removal of supragingival plaque and calculus from all teeth using dental instrument (procedure),event,procedures,579538,False
+64,Removal of subgingival plaque and calculus from all teeth using dental instrument (procedure),event,procedures,579538,False
+65,Renal dialysis (procedure),event,procedures,521449,False
+66,1 ML Epoetin Alfa 4000 UNT/ML Injection [Epogen],event,medications,508552,False
+67,lisinopril 10 MG Oral Tablet,event,medications,392983,False
+68,Assessment using Alcohol Use Disorders Identification Test - Consumption (procedure),event,procedures,362276,False
+69,Screening for drug abuse (procedure),event,procedures,361733,False
+70,Screening for domestic abuse (procedure),event,procedures,355130,False
+71,Stress (finding),event,conditions,350829,False
+72,Evaluation of uterine fundal height (procedure),event,procedures,349405,False
+73,Auscultation of the fetal heart (procedure),event,procedures,349405,False
+74,Hydrochlorothiazide 25 MG Oral Tablet,event,medications,331675,False
+75,Full-time employment (finding),event,conditions,329959,False
+76,Dental plain X-ray bitewing (procedure),event,procedures,307274,False
+77,amLODIPine 2.5 MG Oral Tablet,event,medications,302825,False
+78,Gingivitis (disorder),event,conditions,292629,False
+79,Dental fluoride treatment (procedure),event,procedures,289862,False
+80,sodium fluoride 0.0272 MG/MG Oral Gel,event,medications,289862,False
+81,insulin isophane  human 70 UNT/ML / insulin  regular  human 30 UNT/ML Injectable Suspension [Humulin],event,medications,281013,False
+82,Part-time employment (finding),event,conditions,200298,False
+83,Viral sinusitis (disorder),event,conditions,121465,False
+84,Limited social contact (finding),event,conditions,121315,False
+85,Social isolation (finding),event,conditions,121122,False
+86,Intramuscular injection (procedure),event,procedures,115080,False
+87,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,event,immunizations,112640,False
+88,Nursing care/supplementary surveillance (regime/therapy),event,procedures,111606,False
+89,Not in labor force (finding),event,conditions,111001,False
+90,Dental surgical procedure (procedure),event,procedures,109893,False
+91,Postoperative care for dental procedure (regime/therapy),event,procedures,109893,False
+92,Dental application of desensitizing medicament (procedure),event,procedures,106125,False
+93,Combined chemotherapy and radiation therapy (procedure),event,procedures,102749,False
+94,Physical examination procedure (procedure),event,procedures,100351,False
+95,24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet,event,medications,99820,False
+96,Cisplatin 50 MG Injection,event,medications,96866,False
+97,Hearing examination (procedure),event,procedures,96711,False
+98,Ibuprofen 400 MG Oral Tablet [Ibu],event,medications,94687,False
+99,Acetaminophen 325 MG Oral Tablet [Tylenol],event,medications,94514,False
+100,Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet,event,medications,86331,False
+101,Victim of intimate partner abuse (finding),event,conditions,84258,False
+102,Gingivectomy or gingivoplasty  per tooth (procedure),event,procedures,83979,False
+103,Gingival disease (disorder),event,conditions,83979,False
+104,Acetaminophen 325 MG / Oxycodone Hydrochloride 10 MG Oral Tablet [Percocet],event,medications,83187,False
+105,Rehabilitation therapy (regime/therapy),event,procedures,81527,False
+106,PACLitaxel 100 MG Injection,event,medications,80084,False
+107,Body mass index 30+ - obesity (finding),event,conditions,80004,False
+108,Hemogram  automated  with red blood cells  white blood cells  hemoglobin  hematocrit  indices  platelet count  and manual white blood cell differential (procedure),event,procedures,77715,False
+109,Simvastatin 10 MG Oral Tablet,event,medications,76022,False
+110,zoster vaccine  live,event,immunizations,75765,False
+111,Sleep apnea assessment (procedure),event,procedures,75007,False
+112,Hep A  adult,event,immunizations,74615,False
+113,Acute viral pharyngitis (disorder),event,conditions,69352,False
+114,Colonoscopy (procedure),event,procedures,69110,False
+115,Received higher education (finding),event,conditions,66844,False
+116,Reports of violence in the environment (finding),event,conditions,65686,False
+117,Camera fundoscopy (procedure),event,procedures,62457,False
+118,Diabetic retinal eye exam (procedure),event,procedures,62457,False
+119,Ocular slit lamp examination (procedure),event,procedures,62457,False
+120,Intraocular pressure test (procedure),event,procedures,62457,False
+121,tropicamide 5 MG/ML Ophthalmic Solution,event,medications,62457,False
+122,Indirect gonioscopy (procedure),event,procedures,62457,False
+123,Acetaminophen 325 MG Oral Tablet,event,medications,62351,False
+124,Visual acuity testing (procedure),event,procedures,62324,False
+125,Normal pregnancy (finding),event,conditions,62261,False
+126,Depression screening using Patient Health Questionnaire Nine Item score (procedure),event,procedures,61472,False
+127,Prediabetes (finding),event,conditions,60982,False
+128,Standard pregnancy test (procedure),event,procedures,60902,False
+129,Professional / ancillary services care (regime/therapy),event,procedures,60707,False
+130,Primary dental caries (disorder),event,conditions,60354,False
+131,Ultrasound scan for fetal viability (procedure),event,procedures,58638,False
+132,Restoration of tooth with coverage of all cusps using dental filling material (procedure),event,procedures,57762,False
+133,Application of composite dental filling material to dentin of tooth following fracture of tooth (procedure),event,procedures,57750,False
+134,Acute bronchitis (disorder),event,conditions,56852,False
+135,72 HR Fentanyl 0.025 MG/HR Transdermal System,event,medications,55956,False
+136,Anemia (disorder),event,conditions,55619,False
+137,Unemployed (finding),event,conditions,52917,False
+138,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,event,immunizations,52492,False
+139,albuterol 0.83 MG/ML Inhalation Solution,event,medications,51485,False
+140,Oxygen administration by mask (procedure),event,procedures,48175,False
+141,Abuse-Deterrent 12 HR Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet [Oxycontin],event,medications,46025,False
+142,12 HR Hydrocodone Bitartrate 10 MG Extended Release Oral Capsule,event,medications,45970,False
+143,Placing subject in prone position (procedure),event,procedures,45810,False
+144,Cytopathology procedure  preparation of smear  genital source (procedure),event,procedures,44995,False
+145,albuterol 5 MG/ML Inhalation Solution,event,medications,44481,False
+146,60 ACTUAT Fluticasone propionate 0.25 MG/ACTUAT / salmeterol 0.05 MG/ACTUAT Dry Powder Inhaler,event,medications,44251,False
+147,tramadol hydrochloride 50 MG Oral Tablet,event,medications,43259,False
+148,Blood group typing (procedure),event,procedures,42998,False
+149,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,event,immunizations,42232,False
+150,Spirometry (procedure),event,procedures,42115,False
+151,Detection of chromosomal aneuploidy in prenatal amniotic fluid specimen using fluorescence in situ hybridization screening technique (procedure),event,procedures,39159,False
+152,Hepatitis C antibody  confirmatory test (procedure),event,procedures,38943,False
+153,Skin test for tuberculosis  Tine test (procedure),event,procedures,38943,False
+154,Urinalysis  protein  qualitative (procedure),event,procedures,38943,False
+155,Rubella screening test (procedure),event,procedures,38943,False
+156,Measurement of Varicella-zoster virus antibody (procedure),event,procedures,38943,False
+157,Human immunodeficiency virus antigen test (procedure),event,procedures,38943,False
+158,Hepatitis B surface antigen measurement (procedure),event,procedures,38943,False
+159,Urine screening test for diabetes (procedure),event,procedures,38943,False
+160,Urine culture (procedure),event,procedures,38943,False
+161,Syphilis infectious titer test (procedure),event,procedures,38943,False
+162,Gonorrhea infection titer test (procedure),event,procedures,38943,False
+163,Chlamydia antigen test (procedure),event,procedures,38943,False
+164,Administration of vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (procedure),event,procedures,38772,False
+165,Urine screening for glucose (procedure),event,procedures,38772,False
+166,Fetal anatomy study (procedure),event,procedures,37936,False
+167,Alpha-fetoprotein test - antenatal (procedure),event,procedures,37936,False
+168,Streptococcus pneumoniae group B antigen assay (procedure),event,procedures,36709,False
+169,Chronic pain (finding),event,conditions,36165,False
+170,Acetaminophen 300 MG / Codeine Phosphate 15 MG Oral Tablet,event,medications,33947,False
+171,Educated to high school level (finding),event,conditions,33652,False
+172,Essential hypertension (disorder),event,conditions,33539,False
+173,120 ACTUAT fluticasone propionate 0.044 MG/ACTUAT Metered Dose Inhaler [Flovent],event,medications,32518,False
+174,Human parturition  function (observable entity),event,procedures,32328,False
+175,Past pregnancy history of miscarriage (situation),event,conditions,30913,False
+176,Measurement of respiratory function (procedure),event,procedures,29475,False
+177,Naproxen sodium 220 MG Oral Tablet,event,medications,28990,False
+178,Implantation of subcutaneous contraceptive (procedure),event,procedures,28641,False
+179,Plain X-ray of chest (procedure),event,procedures,28051,False
+180,Chronic sinusitis (disorder),event,conditions,28045,False
+181,Insertion of intrauterine contraceptive device (procedure),event,procedures,27785,False
+182,Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet,event,medications,27183,False
+183,Unhealthy alcohol drinking behavior (finding),event,conditions,26856,False
+184,Throat culture (procedure),event,procedures,26739,False
+185,budesonide 0.25 MG/ML Inhalation Suspension,event,medications,26687,False
+186,Acetaminophen 500 MG Oral Tablet,event,medications,26574,False
+187,Chronic low back pain (finding),event,conditions,26239,False
+188,Risk activity involvement (finding),event,conditions,25103,False
+189,Has a criminal record (finding),event,conditions,24730,False
+190,Occupational therapy (regime/therapy),event,procedures,24485,False
+191,Physical therapy procedure (regime/therapy),event,procedures,24439,False
+192,Electrocardiographic procedure (procedure),event,procedures,23931,False
+193,Overdose (disorder),event,conditions,21205,False
+194,Etonogestrel 68 MG Drug Implant,event,medications,20085,False
+195,Removal of subcutaneous contraceptive (procedure),event,procedures,19798,False
+196,10 ML Furosemide 10 MG/ML Injection,event,medications,19535,False
+197,History of tubal ligation (situation),event,conditions,19533,False
+198,High resolution computed tomography of chest without contrast (procedure),event,procedures,19437,False
+199,Metabolic syndrome X (disorder),event,conditions,19285,False
+200,0.4 ML Enoxaparin sodium 100 MG/ML Prefilled Syringe,event,medications,19139,False
+201,Infection of tooth (disorder),event,conditions,18960,False
+202,Simple extraction of tooth (procedure),event,procedures,18960,False
+203,Ibuprofen 200 MG Oral Tablet,event,medications,18911,False
+204,Pulmonary rehabilitation (regime/therapy),event,procedures,18755,False
+205,History and physical examination  limited (procedure),event,procedures,18087,False
+206,Development of individualized plan of care (procedure),event,procedures,18030,False
+207,Initial patient assessment (procedure),event,procedures,18030,False
+208,Housing unsatisfactory (finding),event,conditions,17829,False
+209,Take oral or dental impression (procedure),event,procedures,17546,False
+210,Peripheral blood smear interpretation (procedure),event,procedures,17517,False
+211,Fitting of denture (procedure),event,procedures,17512,False
+212,Laceration - injury (disorder),event,conditions,17504,False
+213,Brief general examination (procedure),event,procedures,17493,False
+214,Review of systems (procedure),event,procedures,17493,False
+215,Suture open wound (procedure),event,procedures,17415,False
+216,NDA020983 200 ACTUAT albuterol 0.09 MG/ACTUAT Metered Dose Inhaler [Ventolin],event,medications,17374,False
+217,NDA021457 200 ACTUAT albuterol 0.09 MG/ACTUAT Metered Dose Inhaler [ProAir],event,medications,17055,False
+218,etoposide 100 MG Injection [Etopophos],event,medications,16782,False
+219,Discharge from hospital (procedure),event,procedures,16703,False
+220,{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Jolivette 28 Day],event,medications,16562,False
+221,120 ACTUAT fluticasone propionate 0.11 MG/ACTUAT Metered Dose Inhaler [Flovent],event,medications,16456,False
+222,Chronic neck pain (finding),event,conditions,16420,False
+223,Optical coherence tomography of retina (procedure),event,procedures,15828,False
+224,Severe anxiety (panic) (finding),event,conditions,15627,False
+225,Physical examination  complete (procedure),event,procedures,15522,False
+226,24 HR tacrolimus 1 MG Extended Release Oral Tablet [Envarsus],event,medications,15036,False
+227,Passive immunization (procedure),event,procedures,14948,False
+228,Sprain (morphologic abnormality),event,conditions,14904,False
+229,Loss of teeth (disorder),event,conditions,14750,False
+230,History taking (procedure),event,procedures,14613,False
+231,Removal of intrauterine contraceptive device (procedure),event,procedures,14384,False
+232,1 ML tacrolimus 5 MG/ML Injection [Prograf],event,medications,14366,False
+233,Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution,event,medications,14162,False
+234,Referral to cardiology service (procedure),event,procedures,14135,False
+235,budesonide 0.125 MG/ML Inhalation Suspension,event,medications,14100,False
+236,1 ML medroxyprogesterone acetate 150 MG/ML Injection,event,medications,14078,False
+237,Dental filling lost (finding),event,conditions,13944,False
+238,Loose dental filling (finding),event,conditions,13813,False
+239,Urinalysis with reflex to microscopy and culture (procedure),event,procedures,13769,False
+240,Leaking dental filling (finding),event,conditions,13758,False
+241,Lack of access to transportation (finding),event,conditions,13733,False
+242,Transport problem (finding),event,conditions,13732,False
+243,Fractured dental filling (finding),event,conditions,13643,False
+244,buprenorphine 2 MG / naloxone 0.5 MG Sublingual Tablet,event,medications,13397,False
+245,Only received primary school education (finding),event,conditions,13386,False
+246,Transplantation of kidney regime (regime/therapy),event,procedures,13055,False
+247,History AND physical examination (procedure),event,procedures,12880,False
+248,Misuses drugs (finding),event,conditions,12675,False
+249,{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Errin 28 Day],event,medications,12664,False
+250,{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Camila 28 Day],event,medications,12625,False
+251,Pre-discharge assessment (procedure),event,procedures,12464,False
+252,Streptococcal sore throat (disorder),event,conditions,12442,False
+253,Speech and language therapy regime (regime/therapy),event,procedures,12206,False
+254,Echocardiography (procedure),event,procedures,12166,False
+255,Miscarriage in first trimester (disorder),event,conditions,12079,False
+256,Clopidogrel 75 MG Oral Tablet,event,medications,12056,False
+257,Abnormal findings diagnostic imaging heart+coronary circulat (finding),event,conditions,11709,False
+258,Replacement of contraceptive intrauterine device (procedure),event,procedures,11619,False
+259,Ischemic heart disease (disorder),event,conditions,11611,False
+260,24 HR metoprolol succinate 100 MG Extended Release Oral Tablet,event,medications,11477,False
+261,Sputum examination (procedure),event,procedures,11465,False
+262,Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray,event,medications,11376,False
+263,Simvastatin 20 MG Oral Tablet,event,medications,11352,False
+264,NDA020503 200 ACTUAT Albuterol 0.09 MG/ACTUAT Metered Dose Inhaler,event,medications,11339,False
+265,Human immunodeficiency virus viral load (procedure),event,procedures,11021,False
+266,Postoperative care (regime/therapy),event,procedures,10955,False
+267,Mammography (procedure),event,procedures,10911,False
+268,Hyperlipidemia (disorder),event,conditions,10818,False
+269,Discussion about signs and symptoms (procedure),event,procedures,10718,False
+270,Angiography of coronary artery (procedure),event,procedures,10714,False
+271,Antibiotic therapy (procedure),event,procedures,10683,False
+272,Sprain of ankle (disorder),event,conditions,10485,False
+273,Urine specimen collection (procedure),event,procedures,10350,False
+274,Suspected disease caused by Severe acute respiratory coronavirus 2 (situation),event,conditions,10294,False
+275,Face mask (physical object),event,procedures,10293,False
+276,Episiotomy (procedure),event,procedures,10227,False
+277,Penicillin V Potassium 500 MG Oral Tablet,event,medications,10037,False
+278,Disorder of kidney due to diabetes mellitus (disorder),event,conditions,10013,False
+279,Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder),event,conditions,9959,False
+280,Diabetes mellitus type 2 (disorder),event,conditions,9710,False
+281,Consultation for treatment (procedure),event,procedures,9672,False
+282,Concussion injury of brain (disorder),event,conditions,9341,False
+283,Transfusion of packed red blood cells (procedure),event,procedures,9221,False
+284,Hypertriglyceridemia (disorder),event,conditions,9216,False
+285,Chronic kidney disease stage 1 (disorder),event,conditions,9213,False
+286,Fever (finding),event,conditions,9105,False
+287,Absolute CD4 count procedure (procedure),event,procedures,8995,False
+288,Post anesthesia care management (procedure),event,procedures,8979,False
+289,Acute infective cystitis (disorder),event,conditions,8960,False
+290,{7 (ethinyl estradiol 0.01 MG Oral Tablet) / 84 (ethinyl estradiol 0.03 MG / levonorgestrel 0.15 MG Oral Tablet) } Pack [Seasonique],event,medications,8935,False
+291,{24 (drospirenone 3 MG / ethinyl estradiol 0.02 MG Oral Tablet) / 4 (inert ingredients 1 MG Oral Tablet) } Pack [Yaz 28 Day],event,medications,8910,False
+292,albuterol 0.21 MG/ML Inhalation Solution,event,medications,8860,False
+293,Complete blood count with white cell differential  automated (procedure),event,procedures,8822,False
+294,{7 (ethinyl estradiol 0.035 MG / norgestimate 0.18 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norgestimate 0.215 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norgestimate 0.25 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Trinessa 28 Day],event,medications,8783,False
+295,Furosemide 40 MG Oral Tablet,event,medications,8689,False
+296,Fracture of bone (disorder),event,conditions,8584,False
+297,{21 (ethinyl estradiol 0.03 MG / levonorgestrel 0.15 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Levora 0.15/30 28 Day],event,medications,8577,False
+298,{5 (dienogest 2 MG / estradiol valerate 2 MG Oral Tablet) / 17 (dienogest 3 MG / estradiol valerate 2 MG Oral Tablet) / 2 (estradiol valerate 1 MG Oral Tablet) / 2 (estradiol valerate 3 MG Oral Tablet) / 2 (inert ingredients 1 MG Oral Tablet) } Pack [Natazia 28 Day],event,medications,8485,False
+299,levonorgestrel 0.000833 MG/HR Intrauterine System [Mirena],event,medications,8463,False
+300,Rectal polypectomy (procedure),event,procedures,8337,False
+301,Vitamin B12 5 MG/ML Injectable Solution,event,medications,8121,False
+302,Epidural anesthesia (procedure),event,procedures,8095,False
+303,budesonide 0.125 MG/ML Inhalation Suspension [Pulmicort],event,medications,7991,False
+304,Pregnancy termination care (regime/therapy),event,procedures,7786,False
+305,Dependent drug abuse (disorder),event,conditions,7783,False
+306,Microalbuminuria due to type 2 diabetes mellitus (disorder),event,conditions,7749,False
+307,Counseling for termination of pregnancy (procedure),event,procedures,7729,False
+308,Induced termination of pregnancy (procedure),event,procedures,7729,False
+309,Chronic intractable migraine without aura (disorder),event,conditions,7589,False
+310,Impacted molars (disorder),event,conditions,7585,False
+311,Chronic kidney disease stage 2 (disorder),event,conditions,7401,False
+312,ferrous sulfate 325 MG Oral Tablet,event,medications,7373,False
+313,levonorgestrel 0.000813 MG/HR Intrauterine System [Liletta],event,medications,7357,False
+314,Polyp of colon (disorder),event,conditions,7326,False
+315,Evaluation procedure (procedure),event,procedures,7299,False
+316,1 ML Enoxaparin sodium 150 MG/ML Prefilled Syringe,event,medications,7151,False
+317,Complete miscarriage (disorder),event,conditions,7136,False
+318,albuterol 0.417 MG/ML Inhalation Solution,event,medications,7073,False
+319,Sinusitis (disorder),event,conditions,7054,False
+320,21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System [NuvaRing],event,medications,7042,False
+321,Cough (finding),event,conditions,7039,False
+322,Sleep disorder (disorder),event,conditions,7029,False
+323,Bone density scan (procedure),event,procedures,7026,False
+324,Acute bacterial sinusitis (disorder),event,conditions,6994,False
+325,Screening for occult blood in feces (procedure),event,procedures,6862,False
+326,levonorgestrel 0.000729 MG/HR Intrauterine System [Kyleena],event,medications,6860,False
+327,losartan potassium 25 MG Oral Tablet,event,medications,6824,False
+328,Concussion with no loss of consciousness (disorder),event,conditions,6824,False
+329,Osteoarthritis of knee (disorder),event,conditions,6773,False
+330,Medical induction of labor (procedure),event,procedures,6752,False
+331,Bone immobilization (procedure),event,procedures,6712,False
+332,Refugee (person),event,conditions,6699,False
+333,Assessment using Morse Fall Scale (procedure),event,procedures,6655,False
+334,Percutaneous coronary intervention,event,procedures,6515,False
+335,History of appendectomy (situation),event,conditions,6413,False
+336,Renal disorder medication review (procedure),event,procedures,6390,False
+337,Alendronic acid 10 MG Oral Tablet,event,medications,6313,False
+338,Assessment using Car  Relax  Alone  Forget  Friends  Trouble Screening Test (procedure),event,procedures,6262,False
+339,NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector,event,medications,6133,False
+340,Subcutaneous immunotherapy (procedure),event,procedures,6075,False
+341,Manual pelvic examination (procedure),event,procedures,6052,False
+342,Recurrent urinary tract infection (disorder),event,conditions,6027,False
+343,10 ML oxaliplatin 5 MG/ML Injection,event,medications,5883,False
+344,Leucovorin 100 MG Injection,event,medications,5883,False
+345,1 ML medroxyPROGESTERone acetate 150 MG/ML Injection,event,medications,5830,False
+346,Sterilization requested (situation),event,conditions,5828,False
+347,Antenatal RhD antibody screening (procedure),event,procedures,5786,False
+348,Transthoracic echocardiography (procedure),event,procedures,5680,False
+349,Hospice care (regime/therapy),event,procedures,5678,False
+350,diphenhydrAMINE Hydrochloride 25 MG Oral Tablet,event,medications,5564,False
+351,Chemotherapy (procedure),event,procedures,5563,False
+352,Injury of neck (disorder),event,conditions,5551,False
+353,Whiplash injury to neck (disorder),event,conditions,5551,False
+354,Notifications (procedure),event,procedures,5515,False
+355,Certification procedure (procedure),event,procedures,5515,False
+356,Referral to sleep apnea clinic (procedure),event,procedures,5452,False
+357,Asthma (disorder),event,conditions,5278,False
+358,Loss of taste (finding),event,conditions,5225,False
+359,Sepsis (disorder),event,conditions,5174,True
+360,COVID-19 vaccine  vector-nr  rS-Ad26  PF  0.5 mL,event,immunizations,5153,False
+361,Anticipatory guidance (procedure),event,procedures,4968,False
+362,Cesarean section (procedure),event,procedures,4958,False
+363,History of coronary artery bypass grafting (situation),event,conditions,4888,False
+364,IPV,event,immunizations,4870,False
+365,carvedilol 25 MG Oral Tablet,event,medications,4827,False
+366,Sterilization education (procedure),event,procedures,4760,False
+367,Ligation of bilateral fallopian tubes (procedure),event,procedures,4752,False
+368,Hyperglycemia (disorder),event,conditions,4749,False
+369,Burn injury (morphologic abnormality),event,conditions,4635,False
+370,Obstructive sleep apnea syndrome (disorder),event,conditions,4634,False
+371,Seizure disorder (disorder),event,conditions,4566,False
+372,History of seizure (situation),event,conditions,4566,False
+373,Proteinuria due to type 2 diabetes mellitus (disorder),event,conditions,4553,False
+374,Otitis media (disorder),event,conditions,4549,False
+375,2 ML Ondansetron 2 MG/ML Injection,event,medications,4502,False
+376,Extraction of wisdom tooth (procedure),event,procedures,4474,False
+377,Acetaminophen 300 MG / HYDROcodone Bitartrate 5 MG Oral Tablet,event,medications,4469,False
+378,Sprain of wrist (disorder),event,conditions,4419,False
+379,168 HR Ethinyl Estradiol 0.00146 MG/HR / norelgestromin 0.00625 MG/HR Transdermal System,event,medications,4372,False
+380,1 ML heparin sodium  porcine 5000 UNT/ML Injection,event,medications,4330,False
+381,Chronic kidney disease stage 3 (disorder),event,conditions,4311,False
+382,Resuscitation using intravenous fluid (procedure),event,procedures,4275,False
+383,Administration of anesthesia for procedure (procedure),event,procedures,4222,False
+384,Intubation (procedure),event,procedures,4222,False
+385,100 ML Propofol 10 MG/ML Injection,event,medications,4222,False
+386,Rocuronium bromide 10 MG/ML Injectable Solution,event,medications,4222,False
+387,Serving in military service (finding),event,conditions,4202,False
+388,Chlorpheniramine Maleate 2 MG/ML Oral Solution,event,medications,4145,False
+389,Referral to cardiac surgery service (procedure),event,procedures,4092,False
+390,Postoperative procedure education (procedure),event,procedures,4058,False
+391,Pre-surgery testing (procedure),event,procedures,4057,False
+392,Notification of treatment plan (procedure),event,procedures,4055,False
+393,Walking exercise test (procedure),event,procedures,4047,False
+394,Stair-climbing test (procedure),event,procedures,4047,False
+395,Scheduling (procedure),event,procedures,4036,False
+396,Midazolam 1 MG/ML Injectable Solution,event,medications,3980,False
+397,cefazolin 2000 MG Injection,event,medications,3972,False
+398,Insertion of catheter into artery (procedure),event,procedures,3942,False
+399,25 ML protamine sulfate (USP) 10 MG/ML Injection,event,medications,3942,False
+400,Abuse-Deterrent 12 HR Oxycodone Hydrochloride 15 MG Extended Release Oral Tablet,event,medications,3911,False
+401,Acetaminophen 325 MG / Oxycodone Hydrochloride 5 MG Oral Tablet,event,medications,3885,False
+402,Patient discharge (procedure),event,procedures,3873,False
+403,Referral for echocardiography (procedure),event,procedures,3842,False
+404,Removal of endotracheal tube (procedure),event,procedures,3825,False
+405,losartan potassium 50 MG Oral Tablet,event,medications,3821,False
+406,Fatigue (finding),event,conditions,3795,False
+407,Discharge to ward (procedure),event,procedures,3789,False
+408,Preparation of patient for procedure (regime/therapy),event,procedures,3779,False
+409,Pulmonary catheterization with Swan-Ganz catheter (procedure),event,procedures,3779,False
+410,Documentation procedure (procedure),event,procedures,3778,False
+411,lisinopril 20 MG Oral Tablet,event,medications,3772,False
+412,Alveolitis of jaw (disorder),event,conditions,3770,False
+413,Tooth socket procedure (procedure),event,procedures,3770,False
+414,Median sternotomy (procedure),event,procedures,3739,False
+415,ciprofloxacin 500 MG Oral Tablet,event,medications,3714,False
+416,Meperidine Hydrochloride 50 MG Oral Tablet,event,medications,3684,False
+417,Augmentation of labor (procedure),event,procedures,3608,False
+418,Laceration of foot (disorder),event,conditions,3596,False
+419,Sputum finding (finding),event,conditions,3593,False
+420,Laceration of forearm (disorder),event,conditions,3540,False
+421,Hydrocortisone 10 MG/ML Topical Cream,event,medications,3514,False
+422,Amoxicillin 250 MG Oral Capsule,event,medications,3507,False
+423,Laceration of hand (disorder),event,conditions,3496,False
+424,Injection of tetanus antitoxin (procedure),event,procedures,3485,False
+425,Facial laceration (disorder),event,conditions,3444,False
+426,Blighted ovum (disorder),event,conditions,3430,False
+427,Laceration of thigh (disorder),event,conditions,3428,False
+428,Triage: emergency center (procedure),event,procedures,3419,False
+429,Taking patient vital signs (procedure),event,procedures,3419,False
+430,History and physical examination with evaluation and management of patient (procedure),event,procedures,3419,False
+431,Adolescent idiopathic scoliosis (disorder),event,conditions,3409,False
+432,Fibromyalgia (disorder),event,conditions,3383,False
+433,Discussion about pregnancy (procedure),event,procedures,3379,False
+434,Pre-eclampsia (disorder),event,conditions,3285,False
+435,Information gathering (procedure),event,procedures,3214,False
+436,Eclampsia in pregnancy (disorder),event,conditions,3127,False
+437,Astemizole 10 MG Oral Tablet,event,medications,3040,False
+438,isoflurane 999 MG/ML Inhalation Solution,event,medications,2951,False
+439,Hep B  adult,event,immunizations,2926,False
+440,Transfer to stepdown unit (procedure),event,procedures,2925,False
+441,Breath-Actuated 120 ACTUAT beclomethasone dipropionate 0.04 MG/ACTUAT Metered Dose Inhaler [Qvar],event,medications,2916,False
+442,Localized  primary osteoarthritis of the hand (disorder),event,conditions,2859,False
+443,Instrumental delivery (procedure),event,procedures,2825,False
+444,Digoxin 0.125 MG Oral Tablet,event,medications,2769,False
+445,verapamil hydrochloride 80 MG Oral Tablet [Calan],event,medications,2769,False
+446,Warfarin Sodium 5 MG Oral Tablet,event,medications,2754,False
+447,Acetaminophen 325 MG / HYDROcodone Bitartrate 7.5 MG Oral Tablet,event,medications,2721,False
+448,Injury of knee (disorder),event,conditions,2692,False
+449,Acetaminophen 325 MG / oxyCODONE Hydrochloride 5 MG Oral Tablet,event,medications,2655,False
+450,Epilepsy (disorder),event,conditions,2631,False
+451,Plain X-ray of knee region (procedure),event,procedures,2629,False
+452,Epidermal burn of skin (disorder),event,conditions,2591,False
+453,Heart failure education (procedure),event,procedures,2525,False
+454,Osteoarthritis of hip (disorder),event,conditions,2478,False
+455,Electroencephalogram (procedure),event,procedures,2458,False
+456,Placement of aortic cross clamp (procedure),event,procedures,2403,False
+457,Cannulation (procedure),event,procedures,2403,False
+458,Vascular cannula removal (procedure),event,procedures,2403,False
+459,Cardiopulmonary bypass operation (procedure),event,procedures,2403,False
+460,Removal of aortic cross clamp (procedure),event,procedures,2403,False
+461,Induced cardioplegia (procedure),event,procedures,2403,False
+462,proparacaine hydrochloride 5 MG/ML Ophthalmic Solution,event,medications,2402,False
+463,Homeless (finding),event,conditions,2382,False
+464,Sleep apnea (disorder),event,conditions,2377,False
+465,Awaiting transplantation of kidney (situation),event,conditions,2367,False
+466,History of myocardial infarction (situation),event,conditions,2365,False
+467,Neuropathy due to type 2 diabetes mellitus (disorder),event,conditions,2351,False
+468,Admission to orthopedic department (procedure),event,procedures,2337,False
+469,Care regimes assessment (procedure),event,procedures,2334,False
+470,Hib (PRP-OMP),event,immunizations,2321,False
+471,Pneumonia (disorder),event,conditions,2303,False
+472,Premature birth of newborn (finding),event,procedures,2301,False
+473,Coronary artery bypass grafting (procedure),event,procedures,2240,False
+474,150 ML vancomycin 5 MG/ML Injection,event,medications,2180,False
+475,Sleep apnea monitoring with alarm (regime/therapy),event,procedures,2178,False
+476,Referral to transplant surgeon (procedure),event,procedures,2154,False
+477,Assessment using New York Heart Association Classification (procedure),event,procedures,2152,False
+478,piperacillin 2000 MG / tazobactam 250 MG Injection,event,medications,2145,False
+479,Chronic kidney disease stage 4 (disorder),event,conditions,2140,True
+480,Admission to intensive care unit (procedure),event,procedures,2118,False
+481,Pulmonary emphysema (disorder),event,conditions,2095,True
+482,Surgical manipulation of joint of knee (procedure),event,procedures,2077,False
+483,emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet,event,medications,2060,False
+484,Laboratory test (procedure),event,procedures,2058,False
+485,sulfamethoxazole 800 MG / trimethoprim 160 MG Oral Tablet,event,medications,2056,False
+486,Intravitreal injection of anti-vascular endothelial growth factor (procedure),event,procedures,2053,False
+487,4 ML bevacizumab 25 MG/ML Injection,event,medications,2053,False
+488,aspirin 81 MG Oral Tablet,event,medications,2040,False
+489,Hypoxemia (disorder),event,conditions,2037,False
+490,Respiratory distress (finding),event,conditions,2037,False
+491,Paclitaxel 100 MG Injection,event,medications,2029,False
+492,prasugrel 10 MG Oral Tablet,event,medications,2017,False
+493,Chronic congestive heart failure (disorder),event,conditions,1996,True
+494,Dyspnea (finding),event,conditions,1995,False
+495,Wheezing (finding),event,conditions,1995,False
+496,Digital examination of rectum (procedure),event,procedures,1969,False
+497,Fracture of forearm (disorder),event,conditions,1939,False
+498,Fracture of clavicle (disorder),event,conditions,1935,False
+499,Plain X-ray of clavicle (procedure),event,procedures,1903,False
+500,Plain X-ray of humerus (procedure),event,procedures,1893,False
+501,Myocardial infarction (disorder),event,conditions,1861,True
+502,Diagnostic assessment (procedure),event,procedures,1860,False
+503,Assessment of cardiac status using monitoring device (procedure),event,procedures,1860,False
+504,Hep B  adolescent or pediatric,event,immunizations,1844,False
+505,Concussion with loss of consciousness (disorder),event,conditions,1842,False
+506,Malignant neoplasm of breast (disorder),event,conditions,1820,True
+507,Injury of tendon of the rotator cuff of shoulder (disorder),event,conditions,1782,False
+508,MMR,event,immunizations,1775,False
+509,aspirin 325 MG Oral Tablet,event,medications,1769,False
+510,Resorption of alveolar process due to dental trauma (disorder),event,conditions,1756,False
+511,Partial thickness burn (disorder),event,conditions,1751,False
+512,Grafting of periodontal bone defect (procedure),event,procedures,1746,False
+513,Diazepam 5 MG Oral Tablet,event,medications,1745,False
+514,Monitoring of patient (regime/therapy),event,procedures,1740,False
+515,Torus palatinus (disorder),event,conditions,1739,False
+516,Excision of maxillary torus palatinus (procedure),event,procedures,1730,False
+517,clonazePAM 0.25 MG Oral Tablet,event,medications,1730,False
+518,Fracture of ankle (disorder),event,conditions,1729,False
+519,carbamazepine 20 MG/ML Oral Suspension [Tegretol],event,medications,1728,False
+520,remifentanil 2 MG Injection,event,medications,1707,False
+521,Fracture subluxation of wrist (disorder),event,conditions,1705,False
+522,Chronic obstructive bronchitis (disorder),event,conditions,1700,True
+523,Plain X-ray of ankle region (procedure),event,procedures,1699,False
+524,Plain X-ray of wrist region (procedure),event,procedures,1678,False
+525,Nonproliferative diabetic retinopathy due to type II diabetes mellitus,event,conditions,1657,False
+526,{7 (inert ingredients 1 MG Oral Tablet) / 21 (mestranol 0.05 MG / norethindrone 1 MG Oral Tablet) } Pack [Norinyl 1+50 28 Day],event,medications,1647,False
+527,{7 (ethinyl estradiol 0.035 MG / norgestimate 0.18 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norgestimate 0.215 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norgestimate 0.25 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Ortho Tri-Cyclen 28 Day],event,medications,1630,False
+528,Recurrent rectal polyp (disorder),event,conditions,1583,False
+529,History of renal transplant (situation),event,conditions,1552,False
+530,Miscarriage in second trimester (disorder),event,conditions,1542,False
+531,Muscle pain (finding),event,conditions,1531,False
+532,Joint pain,event,conditions,1531,False
+533,cephalexin 500 MG Oral Tablet,event,medications,1516,False
+534,Headache (finding),event,conditions,1516,False
+535,Tubal pregnancy (disorder),event,conditions,1513,False
+536,nitrofurantoin  macrocrystals 25 MG / nitrofurantoin  monohydrate 75 MG Oral Capsule,event,medications,1499,False
+537,Osteoporosis (disorder),event,conditions,1484,False
+538,Referral for further care (procedure),event,procedures,1456,False
+539,Movement therapy (regime/therapy),event,procedures,1456,False
+540,nitroglycerin 0.4 MG Sublingual Tablet,event,medications,1441,False
+541,Referral to service (procedure),event,procedures,1435,False
+542,4 ML norepinephrine 1 MG/ML Injection,event,medications,1408,False
+543,lamivudine 300 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet,event,medications,1403,False
+544,Off-pump coronary artery bypass (procedure),event,procedures,1399,False
+545,Sore throat (finding),event,conditions,1395,False
+546,aspirin 81 MG Oral Capsule [Vazalore],event,medications,1360,False
+547,Risk assessment (procedure),event,procedures,1357,False
+548,Terfenadine 60 MG Oral Tablet,event,medications,1324,False
+549,Pretransplant evaluation of kidney recipient (procedure),event,procedures,1313,False
+550,Transplant of kidney (procedure),event,procedures,1311,False
+551,Acute non-ST segment elevation myocardial infarction (disorder),event,conditions,1309,True
+552,dolutegravir 50 MG Oral Tablet,event,medications,1300,False
+553,Health risks education (procedure),event,procedures,1294,False
+554,Assist control ventilation (regime/therapy),event,procedures,1291,False
+555,24 HR tacrolimus 5 MG Extended Release Oral Capsule [Astagraf],event,medications,1285,False
+556,Partial resection of colon (procedure),event,procedures,1273,False
+557,Naproxen 500 MG Oral Tablet,event,medications,1258,False
+558,10 ML Doxorubicin Hydrochloride 2 MG/ML Injection,event,medications,1226,False
+559,Telemedicine consultation with patient (procedure),event,procedures,1220,False
+560,doxycycline hyclate 100 MG,event,medications,1217,False
+561,Range of motion testing (procedure),event,procedures,1213,False
+562,Oral examination (procedure),event,procedures,1213,False
+563,Plain X-ray of mandible (procedure),event,procedures,1210,False
+564,100 ML Epirubicin Hydrochloride 2 MG/ML Injection,event,medications,1202,False
+565,Intravenous blood transfusion of packed cells (procedure),event,procedures,1177,False
+566,Opioid abuse,event,conditions,1169,False
+567,Allergy screening test (procedure),event,procedures,1154,False
+568,Excision of appendix (procedure),event,procedures,1145,False
+569,Appendicitis (disorder),event,conditions,1145,False
+570,Chill (finding),event,conditions,1138,False
+571,heparin sodium  porcine 100 UNT/ML Injectable Solution,event,medications,1133,False
+572,Acetaminophen 160 MG Chewable Tablet,event,medications,1130,False
+573,cobicistat 150 MG / elvitegravir 150 MG / emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet,event,medications,1129,False
+574,Continuous positive airway pressure titration (procedure),event,procedures,1107,False
+575,raltegravir 400 MG Oral Tablet,event,medications,1100,False
+576,Septic shock (disorder),event,conditions,1097,True
+577,Loratadine 10 MG Oral Tablet,event,medications,1097,False
+578,Human epidermal growth factor receptor 2 gene detection by immunohistochemistry (procedure),event,procedures,1079,False
+579,Biopsy of breast (procedure),event,procedures,1079,False
+580,Human epidermal growth factor receptor 2 gene detection by fluorescence in situ hybridization (procedure),event,procedures,1079,False
+581,Discussion about options (procedure),event,procedures,1078,False
+582,ritonavir 100 MG Oral Capsule,event,medications,1057,False
+583,Vasectomy (procedure),event,procedures,1044,False
+584,{5 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ethinyl estradiol 0.03 MG / norethindrone acetate 1 MG Oral Tablet) / 9 (ethinyl estradiol 0.035 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Estrostep Fe 28 Day],event,medications,1033,False
+585,End-stage renal disease (disorder),event,conditions,1030,True
+586,2 ML morphine sulfate 1 MG/ML Injection,event,medications,1026,False
+587,Transformed migraine (disorder),event,conditions,1024,False
+588,Gout,event,conditions,1012,False
+589,Referral to hypertension clinic (procedure),event,procedures,1001,False
+590,sacubitril 97 MG / valsartan 103 MG Oral Tablet [Entresto],event,medications,994,False
+591,Cefuroxime 250 MG Oral Tablet,event,medications,967,False
+592,Acute ST segment elevation myocardial infarction (disorder),event,conditions,940,True
+593,Collection of blood specimen for laboratory (procedure),event,procedures,935,False
+594,Microbial culture of sputum (procedure),event,procedures,935,False
+595,Atopic dermatitis (disorder),event,conditions,932,False
+596,Fetus with chromosomal abnormality (disorder),event,conditions,928,False
+597,Acute respiratory failure (disorder),event,conditions,890,True
+598,Body mass index 40+ - severely obese (finding),event,conditions,889,False
+599,Injury of medial collateral ligament of knee (disorder),event,conditions,869,False
+600,10 ML Alfentanil 0.5 MG/ML Injection,event,medications,851,False
+601,meningococcal MCV4P,event,immunizations,850,False
+602,varicella,event,immunizations,843,False
+603,5 ML SUFentanil 0.05 MG/ML Injection,event,medications,835,False
+604,Alteplase 100 MG Injection,event,medications,835,False
+605,Allopurinol 100 MG Oral Tablet,event,medications,833,False
+606,Cyclophosphamide 1000 MG Injection,event,medications,832,False
+607,Fracture of rib (disorder),event,conditions,832,False
+608,10 ML Fentanyl 0.05 MG/ML Injection,event,medications,829,False
+609,NDA020503 200 ACTUAT albuterol 0.09 MG/ACTUAT Metered Dose Inhaler [Proventil],event,medications,828,False
+610,Ultrasonography of bilateral breasts (procedure),event,procedures,826,False
+611,Nasal sinus endoscopy (procedure),event,procedures,825,False
+612,Major depressive disorder (disorder),event,conditions,819,False
+613,darunavir 800 MG Oral Tablet,event,medications,814,False
+614,Traumatic or nontraumatic brain injury (disorder),event,conditions,805,False
+615,Bullet wound (disorder),event,conditions,800,False
+616,Gunshot wound (disorder),event,conditions,800,False
+617,vancomycin 1000 MG Injection,event,medications,792,False
+618,piperacillin 4000 MG / tazobactam 500 MG Injection,event,medications,792,False
+619,meningococcal polysaccharide (groups A  C  Y and W-135) diphtheria toxoid conjugate vaccine (MCV4P),event,immunizations,791,False
+620,120 ACTUAT fluticasone propionate 0.22 MG/ACTUAT Metered Dose Inhaler [Flovent],event,medications,788,False
+621,Fexofenadine hydrochloride 60 MG Oral Tablet,event,medications,783,False
+622,ticagrelor 90 MG Oral Tablet,event,medications,780,False
+623,pneumococcal polysaccharide vaccine  23 valent,event,immunizations,779,False
+624,Penicillin V Potassium 250 MG Oral Tablet,event,medications,774,False
+625,Excision of fallopian tube and surgical removal of ectopic pregnancy (procedure),event,procedures,767,False
+626,Continuous subcutaneous infusion of insulin (procedure),event,procedures,762,False
+627,insulin  regular  human 100 UNT/ML Injectable Solution,event,medications,762,False
+628,Cognitive and behavioral therapy (regime/therapy),event,procedures,750,False
+629,Acute respiratory distress syndrome (disorder),event,conditions,743,True
+630,Complete blood count (procedure),event,procedures,733,False
+631,Methotrexate injection into tubal pregnancy (procedure),event,procedures,729,False
+632,24 HR nicotine 0.292 MG/HR Transdermal System,event,medications,728,False
+633,Rupture of patellar tendon (disorder),event,conditions,724,False
+634,Acute deep venous thrombosis (disorder),event,conditions,717,True
+635,Smokes tobacco daily (finding),event,conditions,715,False
+636,Aspirin 81 MG Oral Tablet,event,medications,709,False
+637,Biopsy of colon (procedure),event,procedures,703,False
+638,sevoflurane 1000 MG/ML Inhalation Solution,event,medications,673,False
+639,Acute pulmonary embolism (disorder),event,conditions,669,True
+640,Levonorgestrel 0.00354 MG/HR Drug Implant,event,medications,665,False
+641,Pancreatin 600 MG Oral Tablet,event,medications,662,False
+642,dornase alfa 1 MG/ML Inhalation Solution [Pulmozyme],event,medications,662,False
+643,Screening mammography (procedure),event,procedures,658,False
+644,FLUoxetine 20 MG Oral Capsule,event,medications,652,False
+645,Cardiovascular stress testing (procedure),event,procedures,651,False
+646,ciprofloxacin 250 MG Oral Tablet,event,medications,646,False
+647,Sepsis caused by virus (disorder),event,conditions,642,True
+648,Fracture of mandible (disorder),event,conditions,640,False
+649,clopidogrel 300 MG Oral Tablet,event,medications,637,False
+650,4 ML Norepinephrine 1 MG/ML Injection,event,medications,634,False
+651,1 ML Vasopressin (USP) 20 UNT/ML Injection,event,medications,634,False
+652,Malignant neoplasm of colon (disorder),event,conditions,632,True
+653,Closed reduction of mandibular fracture (procedure),event,procedures,629,False
+654,Overlapping malignant neoplasm of colon (disorder),event,conditions,616,True
+655,Loratadine 5 MG Chewable Tablet,event,medications,612,False
+656,cycloSPORINE  modified 100 MG Oral Capsule,event,medications,612,False
+657,desflurane 1000 MG/ML Inhalation Solution,event,medications,598,False
+658,Lumpectomy of breast (procedure),event,procedures,597,False
+659,120 ACTUAT mometasone furoate 0.1 MG/ACTUAT Metered Dose Inhaler [Asmanex],event,medications,589,False
+660,Traumatic dislocation of temporomandibular joint (disorder),event,conditions,588,False
+661,Injury of anterior cruciate ligament (disorder),event,conditions,588,False
+662,Posttreatment stabilization  orthodontic device (procedure),event,procedures,588,False
+663,Closed reduction of dislocation of temporomandibular joint (procedure),event,procedures,581,False
+664,Insulin Lispro 100 UNT/ML Injectable Solution [Humalog],event,medications,571,False
+665,Albuterol 5 MG/ML Inhalation Solution,event,medications,571,False
+666,External beam radiation therapy procedure (procedure),event,procedures,570,False
+667,Contact dermatitis (disorder),event,conditions,569,False
+668,Transfusion of fresh frozen plasma (procedure),event,procedures,565,False
+669,Suspected lung cancer (situation),event,conditions,533,False
+670,Computed tomography of chest and abdomen (procedure),event,procedures,532,False
+671,Magnetic resonance imaging for measurement of brain volume (procedure),event,procedures,530,False
+672,Cerebrovascular accident (disorder),event,conditions,530,True
+673,Percutaneous mechanical thrombectomy of portal vein using fluoroscopic guidance with contrast (procedure),event,procedures,528,False
+674,Tamoxifen 10 MG Oral Tablet,event,medications,526,False
+675,nitrofurantoin  macrocrystals 25 MG / nitrofurantoin  monohydrate 75 MG [Macrobid],event,medications,518,False
+676,Died in hospice (finding),event,conditions,514,False
+677,Vomiting symptom (finding),event,conditions,511,False
+678,Tear of meniscus of knee (disorder),event,conditions,511,False
+679,Nausea (finding),event,conditions,511,False
+680,Alcoholism (disorder),event,conditions,510,False
+681,Familial Alzheimer's disease of early onset (disorder),event,conditions,507,True
+682,Galantamine 4 MG Oral Tablet,event,medications,501,False
+683,Serum metabolic panel (procedure),event,procedures,499,False
+684,Weaning from mechanically assisted ventilation (regime/therapy),event,procedures,485,False
+685,Artificial ventilation (regime/therapy),event,procedures,485,False
+686,Human immunodeficiency virus infection (disorder),event,conditions,481,False
+687,Hemodialysis (procedure),event,procedures,481,False
+688,Aortic valve regurgitation (disorder),event,conditions,475,False
+689,Idiopathic atrophic hypothyroidism (disorder),event,conditions,472,False
+690,Levothyroxine Sodium 0.075 MG Oral Tablet,event,medications,472,False
+691,Protracted diarrhea (finding),event,conditions,465,False
+692,Bleeding from anus (disorder),event,conditions,465,False
+693,pregabalin 100 MG Oral Capsule,event,medications,458,False
+694,Coordination of care plan (procedure),event,procedures,456,False
+695,Non-small cell lung cancer (disorder),event,conditions,456,True
+696,Non-small cell carcinoma of lung  TNM stage 1 (disorder),event,conditions,455,True
+697,50 ML bivalirudin 5 MG/ML Injection,event,medications,452,False
+698,Nasal congestion (finding),event,conditions,451,False
+699,Lung volume reduction surgery (procedure),event,procedures,444,False
+700,Closed fracture of hip (disorder),event,conditions,444,False
+701,Primary fibromyalgia syndrome (disorder),event,conditions,437,False
+702,Sertraline 100 MG Oral Tablet,event,medications,436,False
+703,Plain X-ray of pelvis (procedure),event,procedures,434,False
+704,tetanus toxoid  reduced diphtheria toxoid  and acellular pertussis vaccine  adsorbed,event,immunizations,432,False
+705,Ibuprofen 100 MG Oral Tablet,event,medications,427,False
+706,Mammogram - symptomatic (procedure),event,procedures,423,False
+707,Excision of lesion of breast (procedure),event,procedures,420,False
+708,zoster vaccine recombinant,event,immunizations,418,False
+709,Mestranol / Norethynodrel,event,medications,417,False
+710,Diarrhea symptom (finding),event,conditions,402,False
+711,Cerebral palsy (disorder),event,conditions,401,False
+712,24 HR metoprolol succinate 50 MG Extended Release Oral Tablet,event,medications,390,False
+713,warfarin sodium 5 MG Oral Tablet,event,medications,382,False
+714,Transplant of lung (procedure),event,procedures,382,False
+715,Close observation (regime/therapy),event,procedures,381,False
+716,Congenital uterine anomaly (disorder),event,conditions,380,False
+717,60 ACTUAT budesonide 0.09 MG/ACTUAT Dry Powder Inhaler [Pulmicort],event,medications,373,False
+718,Kitchen practice (regime/therapy),event,procedures,370,False
+719,Exercise class (regime/therapy),event,procedures,370,False
+720,Aortic valve stenosis (disorder),event,conditions,368,False
+721,24 HR Donepezil hydrochloride 10 MG / Memantine hydrochloride 28 MG Extended Release Oral Capsule,event,medications,367,False
+722,atorvastatin 20 MG Oral Tablet,event,medications,363,False
+723,amoxicillin 875 MG / clavulanate 125 MG Oral Tablet,event,medications,360,False
+724,3 ML liraglutide 6 MG/ML Pen Injector,event,medications,357,False
+725,Colchicine 0.6 MG Oral Tablet,event,medications,353,False
+726,Pulmonic valve stenosis (disorder),event,conditions,347,False
+727,Rheumatoid arthritis (disorder),event,conditions,345,False
+728,Mitral valve regurgitation (disorder),event,conditions,342,False
+729,Hematologic disorder medication review (procedure),event,procedures,334,False
+730,Suspected prostate cancer (situation),event,conditions,333,False
+731,Biopsy of prostate (procedure),event,procedures,333,False
+732,30 ACTUAT fluticasone furoate 0.1 MG/ACTUAT Dry Powder Inhaler [Arnuity],event,medications,333,False
+733,Atrial fibrillation (disorder),event,conditions,329,False
+734,Milnacipran hydrochloride 100 MG Oral Tablet,event,medications,327,False
+735,24 HR metoprolol succinate 25 MG Extended Release Oral Tablet,event,medications,326,False
+736,Rupture of appendix (disorder),event,conditions,323,False
+737,Amoxicillin 500 MG Oral Tablet,event,medications,319,False
+738,amoxicillin 500 MG / clavulanate 125 MG Oral Tablet,event,medications,317,False
+739,Spasticity (finding),event,conditions,317,False
+740,Platelet transfusion (procedure),event,procedures,313,False
+741,bictegravir 50 MG / emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Tablet,event,medications,311,False
+742,atorvastatin 10 MG Oral Tablet,event,medications,310,False
+743,metoprolol tartrate 25 MG Oral Tablet,event,medications,303,False
+744,duloxetine 20 MG Delayed Release Oral Capsule,event,medications,300,False
+745,Gastroesophageal reflux disease (disorder),event,conditions,299,False
+746,cetirizine hydrochloride 10 MG Oral Tablet,event,medications,292,False
+747,Primary malignant neoplasm of colon (disorder),event,conditions,292,True
+748,atorvastatin 40 MG Oral Tablet,event,medications,287,False
+749,Excision of lingual frenum (procedure),event,procedures,284,False
+750,Tongue tie (disorder),event,conditions,284,False
+751,Doxycycline Monohydrate 50 MG Oral Tablet,event,medications,282,False
+752,Ultrasonography of abdomen  right upper quadrant and epigastrium (procedure),event,procedures,280,False
+753,Sodium Chloride 9 MG/ML Injectable Solution,event,medications,280,False
+754,Piperacillin 4000 MG / tazobactam 500 MG Injection,event,medications,280,False
+755,Acute cholecystitis (disorder),event,conditions,280,False
+756,Gallbladder calculus (disorder),event,conditions,280,False
+757,1 ML Morphine Sulfate 5 MG/ML Injection,event,medications,280,False
+758,Traumatic injury of spinal cord and/or vertebral column (disorder),event,conditions,273,False
+759,Methotrexate 2.5 MG Oral Tablet,event,medications,273,False
+760,0.25 ML Leuprolide Acetate 30 MG/ML Prefilled Syringe,event,medications,269,False
+761,1 ML DOCEtaxel 20 MG/ML Injection,event,medications,269,False
+762,efavirenz 600 MG Oral Tablet,event,medications,265,False
+763,30 ACTUAT fluticasone furoate 0.2 MG/ACTUAT Dry Powder Inhaler [Arnuity],event,medications,264,False
+764,Laparoscopic cholecystectomy (procedure),event,procedures,263,False
+765,Pyelonephritis (disorder),event,conditions,255,False
+766,Magnetic resonance imaging of breast (procedure),event,procedures,253,False
+767,acetaminophen 300 MG / hydrocodone bitartrate 10 MG Oral Tablet,event,medications,251,False
+768,atorvastatin 80 MG Oral Tablet,event,medications,241,False
+769,History of aortic valve replacement (situation),event,conditions,241,False
+770,Comprehensive metabolic panel (procedure),event,procedures,234,False
+771,Complication occurring during pregnancy (disorder),event,conditions,234,False
+772,zidovudine 300 MG Oral Tablet,event,medications,233,False
+773,efavirenz 600 MG / emtricitabine 200 MG / tenofovir disoproxil fumarate 300 MG Oral Tablet,event,medications,230,False
+774,Sentinel lymph node biopsy (procedure),event,procedures,228,False
+775,Excision of sentinel lymph node (procedure),event,procedures,228,False
+776,Radiation therapy care (regime/therapy),event,procedures,228,False
+777,120 ACTUAT budesonide 0.18 MG/ACTUAT Dry Powder Inhaler [Pulmicort],event,medications,226,False
+778,Admission to trauma surgery department (procedure),event,procedures,219,False
+779,Excision of axillary lymph node (procedure),event,procedures,218,False
+780,Metastatic malignant neoplasm to colon (disorder),event,conditions,217,True
+781,Hydroxychloroquine Sulfate 200 MG Oral Tablet,event,medications,216,False
+782,emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Tablet,event,medications,215,False
+783,Patient referral (procedure),event,procedures,214,False
+784,Multidisciplinary assessment (procedure),event,procedures,213,False
+785,Liaising with referral source (procedure),event,procedures,213,False
+786,Medical records review (procedure),event,procedures,213,False
+787,Imaging finding (finding),event,procedures,212,False
+788,Operative procedure planned (situation),event,procedures,212,False
+789,Direct current cardioversion (procedure),event,procedures,209,False
+790,cobicistat 150 MG / elvitegravir 150 MG / emtricitabine 200 MG / tenofovir alafenamide 10 MG Oral Tablet,event,medications,208,False
+791,Computed tomography of chest  abdomen and pelvis (procedure),event,procedures,206,False
+792,Grid retinal photocoagulation (procedure),event,procedures,203,False
+793,Hepatitis B screening (procedure),event,procedures,198,False
+794,Hepatitis antibody test (procedure),event,procedures,198,False
+795,Hepatitis C screening (procedure),event,procedures,198,False
+796,Tuberculosis screening (procedure),event,procedures,198,False
+797,Serologic test for Toxoplasma gondii (procedure),event,procedures,198,False
+798,Full thickness burn (disorder),event,conditions,198,False
+799,Assessment of social support (procedure),event,procedures,198,False
+800,Assessment of readiness for disclosure of health status (procedure),event,procedures,198,False
+801,Assessment of readiness for self-management (procedure),event,procedures,198,False
+802,Health promotion education  guidance  and counseling (procedure),event,procedures,198,False
+803,Care planning and problem solving actions (procedure),event,procedures,198,False
+804,Venereal disease screening (procedure),event,procedures,198,False
+805,Viral hepatitis screening test (procedure),event,procedures,198,False
+806,60 ACTUAT mometasone furoate 0.22 MG/ACTUAT Dry Powder Inhaler [Asmanex],event,medications,197,False
+807,Admission to long stay hospital (procedure),event,procedures,196,False
+808,Intellectual disability (disorder),event,conditions,196,False
+809,Child attention deficit disorder (disorder),event,conditions,195,False
+810,Human immunodeficiency virus counseling (procedure),event,procedures,195,False
+811,Human immunodeficiency virus screening (procedure),event,procedures,195,False
+812,Poor muscle tone (finding),event,conditions,195,False
+813,Admission to burn unit (procedure),event,procedures,195,False
+814,Incision (procedure),event,procedures,193,False
+815,Patient transfer  in-hospital (procedure),event,procedures,193,False
+816,Application of dressing  sterile (procedure),event,procedures,193,False
+817,Intraoperative care (regime/therapy),event,procedures,193,False
+818,heparin sodium  porcine 1000 UNT/ML Injectable Solution,event,medications,193,False
+819,Intravenous injection (procedure),event,procedures,191,False
+820,remdesivir 100 MG Injection,event,medications,190,False
+821,Suicide risk assessment (procedure),event,procedures,189,False
+822,palbociclib 100 MG Oral Capsule,event,medications,186,False
+823,lopinavir 200 MG / ritonavir 50 MG Oral Tablet,event,medications,183,False
+824,5 ML hyaluronidase-oysk 2000 UNT/ML / trastuzumab-oysk 120 MG/ML Injection,event,medications,182,False
+825,abemaciclib 100 MG Oral Tablet [Verzenio],event,medications,181,False
+826,simvastatin 40 MG Oral Tablet,event,medications,179,False
+827,ivacaftor 150 MG Oral Tablet [Kalydeco],event,medications,178,False
+828,lisinopril 5 MG Oral Tablet,event,medications,177,False
+829,Breath-Actuated 120 ACTUAT beclomethasone dipropionate 0.08 MG/ACTUAT Metered Dose Inhaler [Qvar],event,medications,173,False
+830,Torus mandibularis (disorder),event,conditions,172,False
+831,Assessment using Canadian Study of Health and Aging Clinical Frailty Scale (procedure),event,procedures,170,False
+832,Surgical manipulation of shoulder joint (procedure),event,procedures,170,False
+833,Referral to dentist (procedure),event,procedures,170,False
+834,Simple walk test (procedure),event,procedures,170,False
+835,Assessment using health assessment questionnaire (procedure),event,procedures,170,False
+836,Childhood asthma (disorder),event,conditions,168,False
+837,Insertion of endotracheal tube (procedure),event,procedures,168,False
+838,Excision of lingual torus (procedure),event,procedures,168,False
+839,Transesophageal echocardiography (procedure),event,procedures,163,False
+840,Neoplasm of prostate (disorder),event,conditions,163,True
+841,simvastatin 20 MG Oral Tablet,event,medications,163,False
+842,Ampicillin 100 MG/ML Injectable Solution,event,medications,162,False
+843,Infectious mediastinitis (disorder),event,conditions,161,False
+844,losartan potassium 100 MG Oral Tablet,event,medications,160,False
+845,baricitinib 2 MG Oral Tablet,event,medications,159,False
+846,Replacement of aortic valve (procedure),event,procedures,159,False
+847,ribociclib 200 MG Oral Tablet,event,medications,156,False
+848,azithromycin 250 MG Oral Tablet [Zithromax],event,medications,154,False
+849,Glucose tolerance test (procedure),event,procedures,153,False
+850,60 ACTUAT fluticasone propionate 0.1 MG/ACTUAT Dry Powder Inhaler [Flovent],event,medications,152,False
+851,Shock (disorder),event,conditions,152,True
+852,Fracture of vertebral column with spinal cord injury (disorder),event,conditions,147,False
+853,Prostatectomy (procedure),event,procedures,146,False
+854,Carcinoma in situ of prostate (disorder),event,conditions,146,True
+855,Pan retinal photocoagulation for diabetes (procedure),event,procedures,146,False
+856,Excessive salivation (disorder),event,conditions,145,False
+857,Fine needle aspiration biopsy of lung (procedure),event,procedures,144,False
+858,Cefaclor 250 MG Oral Capsule,event,medications,142,False
+859,fosfomycin 3000 MG Granules for Oral Solution,event,medications,141,False
+860,Emergency coronary artery bypass graft (procedure),event,procedures,140,False
+861,10 ML Fluorouracil 50 MG/ML Injection,event,medications,139,False
+862,Pain (finding),event,conditions,138,False
+863,Determination of susceptibility of Human immunodeficiency virus 1 to panel of antiretroviral drugs using genotypic technique (procedure),event,procedures,137,False
+864,60 ACTUAT fluticasone propionate 0.05 MG/ACTUAT Dry Powder Inhaler [Flovent],event,medications,134,False
+865,Sputum microscopy (procedure),event,procedures,134,False
+866,Chronic hepatitis C (disorder),event,conditions,132,False
+867,Fiberoptic bronchoscopy (procedure),event,procedures,129,False
+868,Penicillin G 375 MG/ML Injectable Solution,event,medications,128,False
+869,Carboplatin 10 MG/ML Injectable Solution,event,medications,128,False
+870,pneumococcal conjugate vaccine  13 valent,event,immunizations,128,False
+871,Renal dysplasia (disorder),event,conditions,127,False
+872,Cardioassist by aortic balloon pump (procedure),event,procedures,126,False
+873,Fracture of vertebral column without spinal cord injury (disorder),event,conditions,126,False
+874,0.67 ML anakinra 149 MG/ML Prefilled Syringe,event,medications,125,False
+875,Thoracentesis (procedure),event,procedures,124,False
+876,atenolol 25 MG Oral Tablet,event,medications,124,False
+877,Lorazepam 2 MG/ML Injectable Solution,event,medications,123,False
+878,Preinfarction syndrome (disorder),event,conditions,123,True
+879,Spontaneous breech delivery (procedure),event,procedures,121,False
+880,atazanavir 300 MG Oral Capsule,event,medications,120,False
+881,Diazepam 5 MG/ML Injectable Solution,event,medications,119,False
+882,Perennial allergic rhinitis with seasonal variation (disorder),event,conditions,119,False
+883,Psychosocial care (regime/therapy),event,procedures,118,False
+884,120 ACTUAT mometasone furoate 0.2 MG/ACTUAT Metered Dose Inhaler [Asmanex],event,medications,118,False
+885,Azithromycin 250 MG Oral Tablet,event,medications,113,False
+886,Kidney transplant failure and rejection (disorder),event,conditions,111,True
+887,Posttraumatic stress disorder (disorder),event,conditions,110,False
+888,anastrozole 1 MG Oral Tablet,event,medications,110,False
+889,Asthma screening (procedure),event,procedures,107,False
+890,rosuvastatin calcium 10 MG Oral Tablet,event,medications,107,False
+891,100 ML eptifibatide 0.75 MG/ML Injection,event,medications,106,False
+892,pravastatin sodium 40 MG Oral Tablet,event,medications,105,False
+893,didanosine 400 MG Delayed Release Oral Capsule,event,medications,105,False
+894,Chronic paralysis due to lesion of spinal cord (disorder),event,conditions,104,False
+895,5 ML fulvestrant 50 MG/ML Prefilled Syringe,event,medications,101,False
+896,Radiotherapy (procedure),event,procedures,100,False
+897,Hep A  ped/adol  2 dose,event,immunizations,100,False
+898,Perennial allergic rhinitis (disorder),event,conditions,99,False
+899,Hemoptysis (finding),event,conditions,98,False
+900,Mental health screening (procedure),event,procedures,97,False
+901,exemestane 25 MG Oral Tablet,event,medications,97,False
+902,letrozole 2.5 MG Oral Tablet,event,medications,96,False
+903,100 ML zoledronic acid 0.04 MG/ML Injection,event,medications,96,False
+904,enoxaparin sodium 100 MG/ML Injectable Solution,event,medications,96,False
+905,100 ML tirofiban 0.05 MG/ML Injection,event,medications,96,False
+906,Dribbling from mouth (finding),event,conditions,95,False
+907,pravastatin sodium 20 MG Oral Tablet,event,medications,95,False
+908,chloroquine phosphate 500 MG Oral Tablet,event,medications,95,False
+909,lisinopril 40 MG Oral Tablet,event,medications,94,False
+910,Acute allergic reaction (disorder),event,conditions,91,False
+911,Injection of epinephrine (procedure),event,procedures,91,False
+912,predniSONE 5 MG Oral Tablet,event,medications,91,False
+913,metoprolol tartrate 50 MG Oral Tablet,event,medications,89,False
+914,Social migrant (finding),event,conditions,89,False
+915,History of artificial joint (situation),event,conditions,87,False
+916,Passive conjunctival congestion (finding),event,conditions,86,False
+917,bisoprolol fumarate 5 MG Oral Tablet,event,medications,84,False
+918,1 ML denosumab 60 MG/ML Prefilled Syringe,event,medications,83,False
+919,Losartan Potassium 25 MG Oral Tablet,event,medications,83,False
+920,Heart failure (disorder),event,conditions,83,True
+921,hydrochlorothiazide 25 MG / losartan potassium 100 MG Oral Tablet,event,medications,82,False
+922,tenofovir disoproxil fumarate 300 MG Oral Tablet,event,medications,81,False
+923,Dislocation of hip joint (disorder),event,conditions,80,False
+924,amlodipine / hydrochlorothiazide / olmesartan Oral Tablet [Tribenzor],event,medications,80,False
+925,atenolol 50 MG Oral Tablet,event,medications,80,False
+926,Macular edema and retinopathy due to type 2 diabetes mellitus (disorder),event,conditions,79,False
+927,Toxoplasma gondii antibody detected (finding),event,conditions,79,False
+928,emtricitabine 200 MG Oral Capsule,event,medications,78,False
+929,Heparin therapy (procedure),event,procedures,77,False
+930,atenolol 100 MG Oral Tablet,event,medications,75,False
+931,lisinopril 2.5 MG Oral Tablet,event,medications,75,False
+932,Small cell carcinoma of lung (disorder),event,conditions,75,True
+933,Primary small cell malignant neoplasm of lung  TNM stage 1 (disorder),event,conditions,75,True
+934,glycopyrrolate 1.5 MG Oral Tablet [Glycate],event,medications,74,False
+935,lamivudine 300 MG Oral Tablet,event,medications,74,False
+936,Unable to swallow saliva (finding),event,conditions,74,False
+937,Dystonia (disorder),event,conditions,74,False
+938,Chlorpheniramine Maleate 4 MG Oral Tablet,event,medications,71,False
+939,Acquired coagulation disorder (disorder),event,conditions,71,False
+940,Brachytherapy of breast (procedure),event,procedures,71,False
+941,hydrochlorothiazide 25 MG / lisinopril 20 MG Oral Tablet,event,medications,71,False
+942,DTaP,event,immunizations,70,False
+943,Methylphenidate Hydrochloride 20 MG Oral Tablet,event,medications,68,False
+944,lamivudine 150 MG / zidovudine 300 MG Oral Tablet,event,medications,67,False
+945,Mitral valve stenosis (disorder),event,conditions,64,False
+946,cefpodoxime 200 MG Oral Tablet,event,medications,63,False
+947,stavudine 40 MG Oral Capsule,event,medications,63,False
+948,Pulmonic valve regurgitation (disorder),event,conditions,62,False
+949,Injury of heart (disorder),event,conditions,62,False
+950,fosamprenavir 700 MG Oral Tablet,event,medications,60,False
+951,Catheter ablation of tissue of heart (procedure),event,procedures,60,False
+952,hydrochlorothiazide 12.5 MG / lisinopril 10 MG Oral Tablet,event,medications,60,False
+953,enalapril maleate 10 MG Oral Tablet,event,medications,59,False
+954,200 ACTUAT levalbuterol 0.045 MG/ACTUAT Metered Dose Inhaler [Xopenex],event,medications,58,False
+955,Urine pregnancy test (procedure),event,procedures,58,False
+956,carvedilol 12.5 MG Oral Tablet,event,medications,58,False
+957,Reexploration procedure (procedure),event,procedures,56,False
+958,Injury of kidney (disorder),event,conditions,56,False
+959,levalbuterol 0.417 MG/ML Inhalation Solution,event,medications,55,False
+960,Chronic type B viral hepatitis (disorder),event,conditions,54,False
+961,predniSONE 20 MG Oral Tablet,event,medications,54,False
+962,Home health aide service (regime/therapy),event,procedures,52,False
+963,Referral for laboratory tests (procedure),event,procedures,51,False
+964,Patient informed - test result (situation),event,procedures,51,False
+965,Lab findings education  guidance  and counseling (procedure),event,procedures,51,False
+966,Discussion about treatment (procedure),event,procedures,51,False
+967,saquinavir mesylate 500 MG Oral Tablet,event,medications,50,False
+968,Constipation (finding),event,conditions,50,False
+969,Acquired immune deficiency syndrome (disorder),event,conditions,48,False
+970,Prosthetic total arthroplasty of knee joint (procedure),event,procedures,48,False
+971,cefdinir 300 MG Oral Capsule,event,medications,48,False
+972,Seasonal allergic rhinitis (disorder),event,conditions,48,False
+973,rosuvastatin calcium 20 MG Oral Tablet,event,medications,47,False
+974,Cholecystectomy (procedure),event,procedures,47,False
+975,Vancomycin 50 MG/ML Injectable Solution,event,medications,47,False
+976,hydrochlorothiazide 12.5 MG / lisinopril 20 MG Oral Tablet,event,medications,46,False
+977,NDA020983 60 ACTUAT albuterol 0.09 MG/ACTUAT Metered Dose Inhaler [Ventolin],event,medications,46,False
+978,Referral to home health care service (procedure),event,procedures,45,False
+979,Comprehensive interview and evaluation (procedure),event,procedures,45,False
+980,Multidisciplinary care conference (procedure),event,procedures,44,False
+981,rosuvastatin calcium 5 MG Oral Tablet,event,medications,43,False
+982,Microbial culture (procedure),event,procedures,43,False
+983,Bacterial infectious disease (disorder),event,conditions,43,False
+984,ramipril 10 MG Oral Capsule,event,medications,41,False
+985,12 HR Cefaclor 500 MG Extended Release Oral Tablet,event,medications,41,False
+986,Tricuspid valve regurgitation (disorder),event,conditions,40,False
+987,HPV  quadrivalent,event,immunizations,39,False
+988,hydrochlorothiazide 12.5 MG / losartan potassium 50 MG Oral Tablet,event,medications,39,False
+989,Osteoporotic fracture of bone (disorder),event,conditions,39,False
+990,Meningomyelocele (disorder),event,conditions,38,False
+991,20 ML Ciprofloxacin 10 MG/ML Injection,event,medications,38,False
+992,zalcitabine 0.75 MG Oral Tablet,event,medications,38,False
+993,Congenital deformity of foot (disorder),event,conditions,38,False
+994,Traumatic brain injury (disorder),event,conditions,37,False
+995,Intracavitary brachytherapy (procedure),event,procedures,37,False
+996,Opening of chest (procedure),event,procedures,37,False
+997,12 lead electrocardiogram (procedure),event,procedures,37,False
+998,Reasons for treatment delay (finding),event,procedures,36,False
+999,20 ML tocilizumab 20 MG/ML Injection,event,medications,36,False
+1000,propranolol hydrochloride 20 MG Oral Tablet,event,medications,36,False
+1001,Loop colostomy (procedure),event,procedures,36,False
+1002,Proliferative diabetic retinopathy due to type II diabetes mellitus,event,conditions,36,False
+1003,Aztreonam 2000 MG Injection,event,medications,35,False
+1004,irbesartan 150 MG Oral Tablet,event,medications,35,False
+1005,Urinary tract infectious disease (disorder),event,conditions,35,False
+1006,bisoprolol fumarate 2.5 MG / hydrochlorothiazide 6.25 MG Oral Tablet,event,medications,34,False
+1007,Interstitial brachytherapy (procedure),event,procedures,34,False
+1008,Pressure injury stage II (disorder),event,conditions,34,False
+1009,amlodipine 5 MG / hydrochlorothiazide 12.5 MG / olmesartan medoxomil 40 MG [Tribenzor],event,medications,34,False
+1010,Amputation care (regime/therapy),event,procedures,34,False
+1011,Referral to orthopedic surgeon (procedure),event,procedures,33,False
+1012,quinapril 40 MG Oral Tablet,event,medications,33,False
+1013,Memantine hydrochloride 2 MG/ML Oral Solution,event,medications,33,False
+1014,Child examination: school screening (procedure),event,procedures,33,False
+1015,Plain X-ray of spine and pelvis (procedure),event,procedures,33,False
+1016,Measurement procedure (procedure),event,procedures,33,False
+1017,Referral for X-ray (procedure),event,procedures,33,False
+1018,Osteopathic postural examination (procedure),event,procedures,33,False
+1019,Transfusion of red blood cells (procedure),event,procedures,32,False
+1020,enalapril maleate 20 MG Oral Tablet,event,medications,32,False
+1021,ceftriaxone 1000 MG Injection,event,medications,32,False
+1022,simvastatin 10 MG Oral Tablet,event,medications,32,False
+1023,Tdap,event,immunizations,32,False
+1024,Chiari malformation type II (disorder),event,conditions,32,False
+1025,History of amputation of foot (situation),event,conditions,31,False
+1026,Naltrexone hydrochloride 50 MG Oral Tablet,event,medications,31,False
+1027,labetalol hydrochloride 300 MG Oral Tablet,event,medications,31,False
+1028,Glycopyrrolate 1.5 MG Oral Tablet [Glycate],event,medications,31,False
+1029,Positive screening for depression on Patient Health Questionnaire 9 (finding),event,procedures,30,False
+1030,Spina bifida occulta (disorder),event,conditions,30,False
+1031,budesonide 0.5 MG/ML Inhalation Suspension,event,medications,30,False
+1032,Administration of anesthesia AND/OR sedation (procedure),event,procedures,30,False
+1033,Transcatheter aortic valve implantation (procedure),event,procedures,30,False
+1034,Admission to ward (procedure),event,procedures,30,False
+1035,indinavir 400 MG Oral Capsule,event,medications,30,False

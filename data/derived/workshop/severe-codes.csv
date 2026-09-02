@@ -1,0 +1,46 @@
+code,group,in_outcome,note,patients_ever
+Myocardial infarction (disorder),Cardiovascular,True,,1861
+Acute ST segment elevation myocardial infarction (disorder),Cardiovascular,True,,940
+Acute non-ST segment elevation myocardial infarction (disorder),Cardiovascular,True,,1309
+Preinfarction syndrome (disorder),Cardiovascular,True,,123
+Cerebrovascular accident (disorder),Cardiovascular,True,,530
+Chronic congestive heart failure (disorder),Cardiovascular,True,,1996
+Heart failure (disorder),Cardiovascular,True,,83
+Acute pulmonary embolism (disorder),Cardiovascular,True,,669
+Acute deep venous thrombosis (disorder),Cardiovascular,True,,717
+Malignant neoplasm of breast (disorder),Cancer,True,,1820
+Malignant neoplasm of colon (disorder),Cancer,True,,632
+Overlapping malignant neoplasm of colon (disorder),Cancer,True,,616
+Primary malignant neoplasm of colon (disorder),Cancer,True,,292
+Metastatic malignant neoplasm to colon (disorder),Cancer,True,,217
+Non-small cell lung cancer (disorder),Cancer,True,,456
+Non-small cell carcinoma of lung  TNM stage 1 (disorder),Cancer,True,,455
+Small cell carcinoma of lung (disorder),Cancer,True,,75
+Primary small cell malignant neoplasm of lung  TNM stage 1 (disorder),Cancer,True,,75
+Neoplasm of prostate (disorder),Cancer,True,,163
+Carcinoma in situ of prostate (disorder),Cancer,True,,146
+Metastatic malignant neoplasm to prostate (disorder),Cancer,True,,26
+Acute myeloid leukemia (disorder),Cancer,True,,7
+End-stage renal disease (disorder),Renal failure,True,,1030
+Chronic kidney disease stage 4 (disorder),Renal failure,True,,2139
+Kidney transplant failure and rejection (disorder),Renal failure,True,,111
+Acute renal failure on dialysis (disorder),Renal failure,True,,2
+Postoperative renal failure (disorder),Renal failure,True,,2
+Acute respiratory failure (disorder),Respiratory failure,True,,867
+Acute respiratory distress syndrome (disorder),Respiratory failure,True,,743
+Pulmonary emphysema (disorder),Respiratory failure,True,,2095
+Chronic obstructive bronchitis (disorder),Respiratory failure,True,,1700
+Sepsis (disorder),Sepsis / shock,True,,5174
+Septic shock (disorder),Sepsis / shock,True,,1097
+Shock (disorder),Sepsis / shock,True,,152
+Sepsis caused by virus (disorder),Sepsis / shock,True,,642
+Sepsis caused by Staphylococcus aureus (disorder),Sepsis / shock,True,,4
+Sepsis caused by Pseudomonas (disorder),Sepsis / shock,True,,4
+Familial Alzheimer's disease of early onset (disorder),Neurodegenerative,True,,507
+Suspected lung cancer (situation),excluded,False,"work-up artefact -- records that someone looked, not what was found",533
+Suspected prostate cancer (situation),excluded,False,work-up artefact,303
+Awaiting transplantation of kidney (situation),excluded,False,"administrative status, downstream of end-stage renal disease",2366
+Died in hospice (finding),excluded,False,a death marker; including it would leak the outcome,514
+History of myocardial infarction (situation),excluded,False,"history code -- refers to the past, not a new event",2365
+Atrial fibrillation (disorder),excluded,False,significant but not catastrophic; keeps the composite unambiguously severe,329
+Chronic kidney disease stage 3 (disorder),excluded,False,not yet organ failure; deliberately retained as a PREDICTOR,4302
